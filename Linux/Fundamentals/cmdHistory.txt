@@ -1,0 +1,214 @@
+    1  sudo apt update
+    2  sudo apt upgrade
+    3  exit
+    4  code .
+    5  exit
+    6  cd ~
+    7  cd Learning/Python/Python\ Masterclass/
+    8  ld
+    9  ls
+   10  cd OOPS/
+   11  code .
+   12  sudo apt update
+   13  sudo apt upgrade
+   14  /bin/python3 "/home/wsl_ubuntu/Learning/Python/Python Masterclass/OOPS/banking.py"
+   15  sudo apt update
+   16  exit
+   17  source "/home/wsl_ubuntu/Learning/Python/Python Masterclass/venv_ubuntu_3.8.10/bin/activate"
+   18  "/home/wsl_ubuntu/Learning/Python/Python Masterclass/venv_ubuntu_3.8.10/bin/python" "/home/wsl_ubuntu/Learning/Python/Python Masterclass/OOPS/banking.py"
+   19  cd ~
+   20  cd Learning/Python/Python\ Masterclass/
+   21  code .
+   22  htop
+   23  px aww
+   24  px awww
+   25  ps axww
+   26  ps auxww
+   27  whoami
+   28  ps axww
+   29  whoami
+   30  jn
+   31  man whoami 
+   32  man clear
+   33  ls
+   34  cd ~
+   35  ls
+   36  cd
+   37  cd Learning/
+   38  ls
+   39  mkdir Linux
+   40  cd Linux
+   41  mkdir Fundamentals
+   42  ls
+   43  cd Fundamentals/
+   44  sudo apt update
+   45  pwd
+   46  man ls
+   47  ls -a -s
+   48  ls -a
+   49  ls
+   50  cd ~
+   51  ;s
+   52  ls
+   53  ls -a
+   54  ls -a -s
+   55  man la
+   56  man ls
+   57  ls -k
+   58  ls
+   59  cd Learning/Linux/Fundamentals/
+   60  ls /bin
+   61  ps mww
+   62  p
+   63  ps
+   64  ps muww
+   65  ps msuww
+   66  man ps
+   67  ps axms
+   68  ps asms
+   69  ls
+   70  ls -l
+   71  man cd
+   72  cd
+   73  man
+   74  man cd
+   75  man mkdir
+   76  help cd
+   77  sudo apt update
+   78  cd /home
+   79  ls
+   80  cd wsl_ubuntu/
+   81  pwd
+   82  ld
+   83  ls
+   84  ls -a
+   85  ls -al
+   86  man mkdir
+   87  man touch
+   88  ls
+   89  cd Learning/Linux/Fundamentals/
+   90  ls
+   91  touch hello
+   92  ls
+   93  mkdir a\ b
+   94  ls
+   95  ls -al
+   96  cd a\ b/
+   97  cd ..
+   98  ls
+   99  explorer.exe .
+  100  man rmdir
+  101  man rm
+  102  open .
+  103  clear
+  104  man rm
+  105  ls
+  106  open hello 
+  107  hello
+  108  /hello
+  109  ls
+  110  xdg-open .
+  111  explorer.exe hello
+  112  man mv
+  113  touch jornal.txt
+  114  ls
+  115  mv jormal.txt journal.txt
+  116  mv jornal.txt journal.txt
+  117  ls
+  118  mv -v journal.txt journals.txt
+  119  mkdir stuff
+  120  ls
+  121  mv journals.txt stuff/
+  122  ls
+  123  ls stuff/
+  124  ls
+  125  cd ..///
+  126  cd ..
+  127  ls
+  128  cd Python/Python\ Masterclass/
+  129  ls
+  130  cd OOPS/
+  131  ls
+  132  head banking.py 
+  133  head banking.py -n 100
+  134  cd
+  135  ls
+  136  cd Learning/Python/Python\ Masterclass/OOPS/
+  137  ls
+  138  cp banking.py ~/Learning/Linux/Fundamentals/bank.txt
+  139  ls
+  140  cd ../../..
+  141  ls
+  142  cd Linux/Fundamentals/
+  143  ls
+  144  head bank.txt 
+  145  ls
+  146  cat bank.txt 
+  147  nano bank.txt 
+  148  cat bank.txt 
+  149  date
+  150  man date
+  151  ls
+  152  cat -n bank.txt 
+  153  man cat
+  154  less bank.txt 
+  155  ls
+  156  echo "Hello, Worldls!" > abc.txt
+  157  ls
+  158  less abc.txt 
+  159  cat abc.txt 
+  160  nano abc.txt 
+  161  less abc.txt 
+  162  exit
+  163  cd ~
+  164  cd Learning/Linux/Fundamentals/
+  165  ls
+  166  ls -al
+  167  wc abc.txt 
+  168  wc bank.txt
+  169  cat abc.txt 
+  170  man wc
+  171  rm bank.txt.save 
+  172  ls -al
+  173  date | less
+  174  sort bank.txt 
+  175  sort bank.txt > sorted_bank.txt
+  176  less sorted_bank.txt 
+  177  echo $PATH
+  178  echo $USER
+  179  whoami
+  180  echo *
+  181  dal
+  182  find .
+  183  find -type d 
+  184  find -type f
+  185  find -type f *.txt
+  186  find -type f -name *.txt
+  187  find -type f -name "*.txt"
+  188  find -type f -iname "*.txt"
+  189  find -type f -name "*.txt"
+  190  man find
+  191  find -type f -name "*.??"
+  192  find -type f -name "*.???"
+  193  echo {1..1000}
+  194  echo {1..1000000}
+  195  echo {1..10000000}
+  196  clear
+  197  ls
+  198  ls -al
+  199  ls -al *.???
+  200  find -type f -name "h*" -or -name "s*"
+  201  du
+  202  du .
+  203  du -h
+  204  df
+  205  df -h
+  206  history
+  207  ls
+  208  cat -n sorted_bank.txt 
+  209  ls
+  210  history
+  211  nano history
+  212  less history
+  213  history | less
+  214  history > cmdHistory.txt

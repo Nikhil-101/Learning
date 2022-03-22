@@ -1,0 +1,55 @@
+
+
+
+
+
+
+
+    
+            i += 1
+            print("Initial ", end="")
+            print("Money Deposited: {}".format(amount))
+            print("Money Withrawn: {}".format(amount))
+            print("Transaction Cancelled: Not Enough Money")
+            print("{}. {}: {:4} || Balance: {}".format(i, method, amount, balance))
+            self.acc_log.append(('Deposited', amount, balance))
+            self.acc_log.append(('Withrawn ', -amount, balance))
+            self.acc_logging(-amount, self.balance)
+            self.acc_logging(amount, self.balance)
+            self.balance += amount
+            self.balance -= amount
+            self.deposit(amount)
+            self.show_balance()
+            self.show_balance()
+        elif amount < 0:
+        else:
+        for method, amount, balance in self.acc_log:
+        i = 1
+        if 0 < amount < self.balance:
+        if amount > 0:
+        if amount > 0:
+        if amount > 0:
+        print("Balance: {}".format(self.balance))
+        print("Logs of Name: {}".format(self.name))
+        self.acc_log = []
+        self.balance = 0
+        self.name = name
+    def __init__(self, name, amount):
+    def acc_logging(self, amount, balance):
+    def deposit(self, amount):
+    def show_balance(self):
+    def show_log(self):
+    def withraw(self, amount):
+#         object_ref = 2
+#     if choice == 1:
+#     print("Choose the option to continue")
+# while ques == True:
+choice = 10
+class BANK:
+nd = BANK("Nikhil", 1000)
+nd.deposit(500)
+nd.deposit(500)
+nd.show_log()
+nd.withraw(1000)
+print("Welcome to our BANK")
+ques = True

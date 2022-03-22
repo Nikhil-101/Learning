@@ -1,0 +1,366 @@
+    1  sudo apt update
+    2  sudo apt upgrade
+    3  sudo apt update
+    4  exit
+    5  sudo apt update
+    6  cd
+    7  code .
+    8  exit
+    9  htop
+   10  sudo apt update
+   11  cd
+   12  ls Learning/
+   13  cd Learning/
+   14  mkdir DSA
+   15  cd DSA/
+   16  mkdir CodeHelp
+   17  cd CodeHelp/
+   18  code .
+   19  snap
+   20  snap list
+   21  apt search sqlite3
+   22  apt search sqlite4
+   23  sqlite3
+   24  sudo apt install sqlite3
+   25  cd ../..
+   26  cd Python/Python\ Masterclass/
+   27  ls
+   28  mkdir Databases\ in\ Python
+   29  ls
+   30  cd Databases\ in\ Python/
+   31  code .
+   32  sqlite3
+   33  sqlite
+   34  sqlite3
+   35  ls
+   36  ll
+   37  sqlite3 test.db
+   38  fg
+   39  exit
+   40  cd
+   41  cd Learning/
+   42  ls
+   43  mkdir Git
+   44  ls
+   45  cd Git/
+   46  mkdir first_Project
+   47  ls
+   48  cd first_Project/
+   49  git
+   50  git status
+   51  git config --global
+   52  git config --list
+   53  git config --global user.name "Nikhil"
+   54  git config --global user.email "nikhildhiman101@gmail.com"
+   55  git config --list
+   56  git config user.email
+   57  git config core.editor
+   58  git status
+   59  touch test.db
+   60  code test.db 
+   61  less test.db 
+   62  rm test.db 
+   63  ls
+   64  touch readme.md
+   65  code readme.md 
+   66  less readme.md 
+   67  git init
+   68  ls
+   69  ll
+   70  git status
+   71  git add ?
+   72  git log
+   73  git add .
+   74  git status
+   75  git commit -m "v1 commit"
+   76  git status 
+   77  git log
+   78  ls
+   79  code readme.md 
+   80  git status
+   81  git add .
+   82  git status
+   83  git commit -m "v2 commit"
+   84  git status
+   85  git log
+   86  code readme.md 
+   87  less readme.md 
+   88  git log | less
+   89  git log --status
+   90  git log --stat
+   91  git log -p
+   92  git log -p -1
+   93  git status
+   94  git remote add origin https://github.com/Nikhil-101/git_Testing.git
+   95  git remote
+   96  git remote -v
+   97  git push -u origin master
+   98  ssh-keygen -t ed25519 -C "nikhildhiman101@gmail.com"
+   99  eval "$(ssh-agent -s)"
+  100  ssh-add ~/.ssh/id_ed25519
+  101  cat ~/.ssh/id_ed25519.pub
+  102  git push -u origin master
+  103  git
+  104  git status
+  105  git remote
+  106  git push -u origin master
+  107  ll
+  108  git remote
+  109  git remote -v
+  110  git remote add origin git@github.com:Nikhil-101/git_Testing.git
+  111  git remote
+  112  ma git remote
+  113  man git remote
+  114  git remote remove
+  115  git remote remove origin
+  116  git remote
+  117  git remote add origin git@github.com:Nikhil-101/git_Testing.git
+  118  git remote
+  119  git remote -v
+  120  git push -u origin master
+  121  git remote
+  122  git status
+  123  touch newFile.txt
+  124  echo "Hello Again" > newFile.txt 
+  125  less newFile.txt 
+  126  git status
+  127  git add .
+  128  git status
+  129  git commit -m "added newFile.txt"
+  130  git status
+  131  git push -u origin master
+  132  git status
+  133  nano
+  134  vim
+  135  git tag
+  136  git status
+  137  git branch
+  138  ma git push | less
+  139  man git push | less
+  140  git flag
+  141  git reset
+  142  git status
+  143  ma git reset
+  144  man git reset
+  145  git brancg
+  146  git branch
+  147  git config --global color.ui auto
+  148  git config
+  149  git config --global
+  150  git config --list
+  151  cd .
+  152  ls
+  153  cd ..
+  154  mkdir udacity-git-course
+  155  ls
+  156  cd udacity-git-course/
+  157  mkdir new-git-course
+  158  cd new-git-course/
+  159  git init
+  160  git config --list
+  161  touch index.html
+  162  mkdir js
+  163  mkdir img
+  164  mkdir css
+  165  touch css/app.css
+  166  touch js/app.js
+  167  git clone https://github.com/udacity/course-git-blog-project
+  168  ls
+  169  ll
+  170  git status
+  171  git clone ../cloned_repo
+  172  git status
+  173  git commit -am "Initial commit"
+  174  git commit -a -m "Initial commit"
+  175  git add .
+  176  git status
+  177  git commit -m "Initial commit"
+  178  git status
+  179  ls
+  180  exit
+  181  ls
+  182  cd
+  183  ls
+  184  cd Learning/
+  185  ls
+  186  cd Git/
+  187  ls
+  188  cd udacity-git-course/new-git-course/
+  189  ls
+  190  git status
+  191  cd
+  192  cd Learning/Git/
+  193  ls
+  194  cd udacity-git-course/new-git-course/
+  195  ls
+  196  git log
+  197  git statud
+  198  git status
+  199  git branch
+  200  git config --list
+  201  git clone https://github.com/udacity/course-git-blog-project
+  202  ls
+  203  ll
+  204  rm -rf .git
+  205  ll
+  206  git status
+  207  git init
+  208  git clone https://github.com/udacity/course-git-blog-project
+  209  ls
+  210  git add .
+  211  git status
+  212  git commit -m "Initial commit"
+  213  cd course-git-blog-project/
+  214  ls
+  215  git status
+  216  git config --list
+  217  git origin
+  218  git status
+  219  git log | less
+  220  git show -stat
+  221  git show --stat
+  222  git log
+  223  git show --stat
+  224  git log --oneline
+  225  git log -p
+  226  git show --stat
+  227  ll
+  228  git log --stat
+  229  git log -p
+  230  ls
+  231  cd .
+  232  cd ..
+  233  ls
+  234  mv course-git-blog-project/ ..
+  235  ls
+  236  cd ..
+  237  ls
+  238  cd new-git-course/
+  239  ls
+  240  git status
+  241  git commit -am "Deleted another repo"
+  242  git status
+  243  code index.html 
+  244  git status
+  245  git add index.html 
+  246  git status
+  247  git commit
+  248  git log
+  249  git commit -am "added index.html body_tag content"
+  250  git log --stat
+  251  git log -p
+  252  git status
+  253  git diff
+  254  git log
+  255  git diff
+  256  ls
+  257  touch project.docx
+  258  ls
+  259  git status
+  260  touch .gitignore
+  261  code .gitignore 
+  262  git diff
+  263  git status
+  264  git add .gitignore 
+  265  git status 
+  266  git add.
+  267  git add .
+  268  git commit -m "index.html & added .gitignore"
+  269  git status
+  270  git log
+  271  git log -oneline
+  272  git log --oneline
+  273  git tag -a "v1"
+  274  git tag
+  275  git log
+  276  git log --decorate
+  277  git tag -d v1
+  278  git tag
+  279  git log
+  280  git branch
+  281  git branch sidebar
+  282  git branch
+  283  git checkout sidebar 
+  284  git branch 
+  285  git -log --oneline
+  286  git log --oneline
+  287  git checkout master 
+  288  git log --oneline
+  289  git branch 
+  290  code index.html 
+  291  git commit -am "complete index.html"
+  292  ls /css
+  293  ls
+  294  ls css
+  295  code css/app.css 
+  296  git commit -am "added bg color"
+  297  git log --oneline
+  298  git branch -d sidebar 
+  299  git branchq
+  300  git branch
+  301  git branch sidebar 219a6f8
+  302  git branch
+  303  git checkout sidebar 
+  304  git log --oneline
+  305  code index.html 
+  306  git commit -am "added sidebar"
+  307  git checkout master 
+  308  git commit -am "chanaged heading"
+  309  git checkout sidebar 
+  310  git commit -am "added my name"
+  311  git branch -b footer master
+  312  git checkout -b footer master
+  313  git branch 
+  314  git log --oneline
+  315  git checkout sidebar 
+  316  git log --oneline
+  317  git checkout footer 
+  318  git commit -am "added footer"
+  319  git status
+  320  git log --oneline
+  321  git log --oneline --graph
+  322  git log --oneline --graph --all
+  323  git branch
+  324  git checkout master 
+  325  git status
+  326  git merge footer 
+  327  git log --oneline --graph --all
+  328  git diff
+  329  man git diff
+  330  git log --stat
+  331  git log -p
+  332  git merge
+  333  git log --oneline --graph --all
+  334  git merge sidebar 
+  335  git log --oneline --graph --all
+  336  git branch master-update
+  337  git branch
+  338  git branch -d master-update 
+  339  git branch
+  340  git checkout -b master-update
+  341  git branch
+  342  git commit -am "changed aboutme to Myself"
+  343  git branch
+  344  git checkout master
+  345  ls
+  346  git status
+  347  git commit
+  348  git commit -am "changed to about"
+  349  git status
+  350  git branch
+  351  git branch --oneline --graph --all
+  352  git log --oneline --graph --all
+  353  git merge master-update 
+  354  git status
+  355  git add .
+  356  git status
+  357  git commit
+  358  git branch --oneline --graph --all
+  359  git lig --oneline --graph --all
+  360  git log --oneline --graph --all
+  361  git reflog
+  362  git remote
+  363  git remote -v
+  364  git shortog
+  365  git shortlog
+  366  history > git_history.txt

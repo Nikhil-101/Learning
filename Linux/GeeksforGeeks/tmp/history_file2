@@ -1,0 +1,182 @@
+    1  sudo apt update
+    2  sudo apt upgrade
+    3  sudo apt update
+    4  sudo apt autoclean
+    5  sudo apt autoremove
+    6  exit
+    7  cd
+    8  ls
+    9  ll
+   10  aliases
+   11  alias
+   12  la -alFh
+   13  code .bashrc 
+   14  code .
+   15  cd Learning/
+   16  ls
+   17  pwd
+   18  cd /home/wsl_ubuntu/Learning
+   19  cd ..
+   20  cd /home/wsl_ubuntu/Learning
+   21  l
+   22  ls
+   23  l
+   24  exit
+   25  cd 
+   26  l
+   27  ll
+   28  nano .bashrc
+   29  python
+   30  cd
+   31  ll
+   32  cd ..
+   33  cd
+   34  ll
+   35  chmod +rwx Learning/
+   36  sudo chmod +rwx Learning/
+   37  ll
+   38  sudo chmod a+rwx Learning/
+   39  ll
+   40  sudo chown -R wsl_ubuntu:wsl_ubuntu Learning/
+   41  ll
+   42  learn
+   43  l
+   44  cd CodeWithHarry/
+   45  l
+   46  cd C\ Programming/
+   47  ls
+   48  code .
+   49  gcc
+   50  sudo apt install gcc
+   51  code .
+   52  l
+   53  mkdir tmp
+   54  ll
+   55  mkdir tmp
+   56  exit
+   57  learn
+   58  cd Python/Python\ Masterclass/
+   59  ls
+   60  l
+   61  cd Databases\ in\ Python/
+   62  ls
+   63  cd .
+   64  cd ..
+   65  sudo apt install venv
+   66  sudo apt install python3-venv
+   67  python -m venv venv_wsl_py3.8
+   68  python3 -m venv venv_wsl_py3.8
+   69  sudo python3 -m venv venv_wsl_py3.8
+   70  ls
+   71  l
+   72  code .
+   73  pip list
+   74  cd "/home/wsl_ubuntu/Learning/CodeWithHarry/C Programming/tmp/" && gcc tmp1.c -o tmp1 && "/home/wsl_ubuntu/Learning/CodeWithHarry/C Programming/tmp/"tmp1
+   75  learn
+   76  l
+   77  cd CodeWithHarry/
+   78  ls
+   79  cd C\ Programming/
+   80  code .
+   81  l
+   82  learn
+   83  l
+   84  cd Python/Python\ Masterclass/
+   85  l
+   86  sudo apt update
+   87  apt list --upgradable 
+   88  sudo apt upgrade
+   89  sudo apt update
+   90  sudo apt clean
+   91  sudo apt sutoclean
+   92  sudo apt autoclean
+   93  sudo apt update
+   94  exit
+   95  sudo apt update
+   96  sudo apt upgrade
+   97  cd /
+   98  l
+   99  cd root
+  100  sudo cd root
+  101  sudo su
+  102  learn
+  103  cd /
+  104  l
+  105  cd opt/
+  106  l
+  107  ll
+  108  cd ..
+  109  l
+  110  type learn
+  111  type cd
+  112  type ls
+  113  type l
+  114  type ll
+  115  cat -
+  116  cd
+  117  ll
+  118  nano .bashrc
+  119  l
+  120  mkdir abc
+  121  cd abc/
+  122  touch a.txt
+  123  touch b.txt
+  124  ll
+  125  cd ..
+  126  ll
+  127  cd Learning/
+  128  ll
+  129  cd ..
+  130  ls
+  131  rm abc
+  132  l
+  133  cd Learning/
+  134  cd Linux/
+  135  ls
+  136  cd GeeksforGeeks/
+  137  mkdir tmp
+  138  cd tmp/
+  139  touch a
+  140  cat > b
+  141  l
+  142  cat > c
+  143  l
+  144  cat a b c
+  145  cat a
+  146  cat b
+  147  cat c
+  148  source ~/.bashrc
+  149  man wc
+  150  l
+  151  wc a
+  152  wc -l a
+  153  cat >> n
+  154  wc a n
+  155  less history
+  156  cat history | touch
+  157  cat history || touch
+  158  cat history
+  159  history
+  160  l
+  161  cmp a n
+  162  less a n
+  163  com a n
+  164  comm a n
+  165  cat n | lesss
+  166  cat n | less
+  167  history | >> a
+  168  less a
+  169  less history
+  170  history
+  171  echo history
+  172  ls
+  173  l
+  174  l | wc -l
+  175  l | wc
+  176  ls | wc
+  177  ls
+  178  l
+  179  history | tee history_file
+  180  l
+  181  less history_file 
+  182  history | cat >> history_file2
