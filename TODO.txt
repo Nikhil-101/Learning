@@ -1,0 +1,2 @@
+Difficult Level Question:
+: Automated Bill Generator #69 in C | CodeWithHarry -> "/home/wsl_ubuntu/Learning/CodeWithHarry/C Programming/Exercises"

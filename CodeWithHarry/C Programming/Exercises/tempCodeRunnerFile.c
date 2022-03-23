@@ -1,4 +1,2 @@
-    // printf("Enter name: ");
-    // scanf("%s", name);
-    // printf("Enter item purchased: ");
-    // scanf("%s", item);
+    // int a = (int) argv[2];
+    // int b = argv[3];
