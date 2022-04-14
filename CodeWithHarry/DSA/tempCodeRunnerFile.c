@@ -1,1 +1,4 @@
-q+p*/m-n
+if (isEmpty(q))
+    {
+        q->f = q->r = nptr;
+    }

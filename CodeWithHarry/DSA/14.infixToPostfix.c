@@ -82,6 +82,7 @@ int inToPost(stack *ptr, char *expr, char *r){
         r[j] = pop(ptr);
         j++;
     }
+    r[j] = '\0';
     return 1;
 }
 
