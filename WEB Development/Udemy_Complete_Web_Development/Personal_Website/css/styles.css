@@ -1,0 +1,22 @@
+body{
+    background-color: lavender;
+}
+hr{
+    height: 0px;
+    width: 5%;
+    border-style: dotted none none;
+    border-color: darkgray;
+    border-width: 8px;
+}
+
+h1{
+    color: darkgray;
+}
+
+h2{
+    color: darkgray;
+}
+
+h3{
+    color: darkgray;
+}

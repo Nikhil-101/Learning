@@ -1,4 +1,4 @@
-for (int i = 0; i <= high; i++)
+if (ptr->f == NULL)
     // {
-    //     arr[i] = tmp[i];
+    //     ptr->r = NULL;
     // }

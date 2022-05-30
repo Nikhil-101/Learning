@@ -1,0 +1,175 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    width: 70px;
+    margin: 0 auto;
+    border-style: dotted none none none;
+    border-width: 7px;
+}
+
+/* CLASSES */
+
+/* Div */
+
+.contact-me {
+    margin: 50px auto 0;
+    padding-bottom: 25px;
+}
+
+.content-div {
+    background-color: #DEB6AB;
+
+}
+
+.footer-div {
+    background-color: #AC7D88;
+    padding: 20px;
+}
+
+.header-div {
+    padding-top: 100px;
+    background-color: #F8ECD1;
+    position: relative;
+}
+
+.navbar-div {
+    position: relative;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-color: #F8ECD1;
+}
+
+.skills {
+    padding-top: 20px;
+}
+
+.skill-row {
+    width: 50%;
+    text-align: left;
+    line-height: 2;
+    margin: 60px auto 100px;
+
+}
+
+/* Images */
+
+.chillies-skill-pic {
+    height: 150px;
+    float: right;
+    margin-left: 5px;
+    /* margin: 12px 0px 12px 15px; */
+}
+
+.computer-skill-pic {
+    height: 150px;
+    float: left;
+    margin-right: 15px;
+}
+
+.navbar-pic {
+    height: 60px;
+    position: absolute;
+    left: 19%;
+    top: 10px;
+}
+
+.profile-pic {
+    height: 150px;
+    margin: 20px auto 0;
+}
+
+.upper-cloud-img {
+    position: absolute;
+    right: 20%;
+    top: 10%;
+}
+
+.lower-cloud-img {
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
+
+
+/* Buttons */
+
+.about-btn {
+    position: absolute;
+    right: 7%;
+    top: 30px;
+}
+
+.contact-btn {
+    position: absolute;
+    right: 20%;
+    top: 30px;
+}
+
+.home-btn {
+    position: absolute;
+    right: 34.5%;
+    top: 30px;
+}
+/* Others */
+
+.copyright-p {
+    margin: 7px auto 0;
+}
+
+.designation-p {
+    font-size: 1.5rem;
+}
+
+.intro-p {
+    margin-bottom: 50px;
+}
+
+.footer-link {
+    padding: 30px;
+}
+
+.name-h1 {
+    width: 170px;
+    margin: 0 auto;
+    font-size: 3rem;
+}
+
+.pro-intro {
+    text-decoration: underline;
+}
+
+
+.btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }

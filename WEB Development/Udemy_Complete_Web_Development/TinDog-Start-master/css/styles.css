@@ -1,0 +1,94 @@
+body {
+    font-family: 'Montserrat', 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+.features-col {
+    text-align: center;
+    margin-bottom: 70px;
+    padding: 0 8%;
+}
+
+.features-div {
+    padding: 130px 150px 10px;
+}
+
+.features-h3 {
+    font-size: 1.5rem;
+}
+
+.features-img {
+    color: #ef8172;
+    padding-bottom: 15px;
+}
+
+.features-img:hover {
+    color: #ff4c68;
+}
+
+.features-p {
+    color: #8f8f8f;
+}
+
+.heading-1 {
+    padding-top: 20%;
+    padding-bottom: 8%;
+}
+
+.iphone-pic-div {
+    padding-top: 100px;
+    transform: rotate(25deg);
+}
+
+.title-nav-item {
+    margin-right: 40px;
+}
+
+#title {
+    background-color: #ff4c68;
+}
+
+
+/* Testimonials Section */
+
+#testimonials {
+    padding: 100px 250px 100px;
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
+
+.testimonials-h2 {
+    font-size: 3rem;
+    line-height: 1.5;
+    /* margin-bottom: 3%; */
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 2% auto;
+}
+
+/* Press Section */
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
