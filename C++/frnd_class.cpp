@@ -7,7 +7,7 @@ using namespace std;
 
 class complex{
     int a, b;
-    friend class calculator;
+    friend class simpleCalculator;
     // friend int calculator::complexRelSum(complex, complex);     //true for individual functions
     // friend int calculator::complexImgSum(complex, complex);
     public:
@@ -20,7 +20,7 @@ class complex{
         }
 };
 
-class calculator{
+class simpleCalculator{
     // int sum;
     public:
         int complexRelSum(complex o1, complex o2){
@@ -41,7 +41,7 @@ class calculator{
 
 int main(){
     complex c1, c2;
-    calculator cal;
+    simpleCalculator cal;
     int sum;
 
     c1.setNumber(1, 2);
