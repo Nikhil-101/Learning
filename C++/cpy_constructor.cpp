@@ -29,7 +29,6 @@ int main(){
     n1.showNum();
     n2 = number(n1);
     n2.showNum();
-    n2.showNum();
     
     return 0;
 }
