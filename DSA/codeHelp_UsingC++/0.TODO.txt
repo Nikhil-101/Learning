@@ -1,0 +1,4 @@
+1-> Lecture 6: Pending display binary representation of -ive numbers (Hint: 1. 1's Complement 2. 2's Complement)
+2-> Lecture 7: Convert binary into decimal numbers
+3-> Lecture 10: Unique Number of Occurrences | Can't do as it requires hash and maps to solve
+4 -> Lecture 10: 3SUM or Triplet Sum | Unable to solve this & to watch it later on.
