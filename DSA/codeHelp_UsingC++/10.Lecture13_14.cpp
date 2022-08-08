@@ -206,7 +206,7 @@ void squareRootBinaryFloorValue(long long int num){
 
 
 // Square Root Using Binary Search with upto 2 precision decimal points
-
+// To get more optimized code refer to DSA course Lecture 14 by Love Babbar
 long double squareRoot2PrecisionDigits(long long int num, long double n){
     long double ans, sq;
     // n+=0.1;
