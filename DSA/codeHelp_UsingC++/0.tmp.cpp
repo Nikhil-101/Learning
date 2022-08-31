@@ -41,16 +41,21 @@ int main(){
     // cout<<(a&1)<<endl;
     // cout<<b<<endl;
 
-    vector<int> arr={1, 2, 3, 4, 5, 6};
-    int size=arr.size();
-    int m = 3;
-    int l=m+1, r=size-1;
-    int range=(size-m)/2;
-    traverseArray(arr, size);
-    for (int i = 0; i < range; i++,l++,r--)
+    // vector<int> arr={1, 2, 3, 4, 5, 6};
+    // int size=arr.size();
+    // int m = 3;
+    // int l=m+1, r=size-1;
+    // int range=(size-m)/2;
+    // traverseArray(arr, size);
+    // for (int i = 0; i < range; i++,l++,r--)
+    // {
+    //     swap(arr[l], arr[r]);
+    // }
+    // traverseArray(arr, size);
+    for (int i = 1; i < 50; i++)
     {
-        swap(arr[l], arr[r]);
+        cout<<i%5<<" ";
     }
-    traverseArray(arr, size);
+    cout<<endl;
     return 0;
 }
