@@ -1,8 +1,20 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
+#include<stack>
 using namespace std;
 
 void traverseArray(vector<string> arr)
+{
+    for (int i = 0; i < arr.size(); i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+    return;
+}
+
+void traverseArray(vector<char> arr)
 {
     for (int i = 0; i < arr.size(); i++)
     {
@@ -143,23 +155,144 @@ int main(){
     // cout<<"Max occuring char is: "<<c<<endl;
 
 // Replace white space with '@40' in string
-    string str="Nikhil Dhiman";
-    string ans;
-    for(int i=0;i<str.length();i++){
-        if(str[i]==' '){
-            // ans.push_back('@');
-            // ans.push_back('4');
-            // ans.push_back('0');
-            ans.append("@40");
-        }
-        else{
-            ans.push_back(str[i]);
-        }
-    }
-    traverseArray(str);
-    traverseArray(ans);
+    // string str="Nikhil Dhiman";
+    // string ans;
+    // for(int i=0;i<str.length();i++){
+    //     if(str[i]==' '){
+    //         // ans.push_back('@');
+    //         // ans.push_back('4');
+    //         // ans.push_back('0');
+    //         ans.append("@40");
+    //     }
+    //     else{
+    //         ans.push_back(str[i]);
+    //     }
+    // }
+    // traverseArray(str);
+    // traverseArray(ans);
 
-    // return ans;
+// // Remove all occurences of a substring
+//     string s="wwwwwwwwwwwwwwwwwwwwwvwwwwswxwwwwsdwxweeohapwwzwuwajrnogb", part="w";
+
+//     int step=part.length(), size=s.length(), found=0;
+//     traverseArray(s);
+//     for (int i = 0,n=0; i<size; i++)
+//     {
+//         if (s[i]==part[0])
+//         {
+//             // cout<<"a is matched"<<endl;
+//             for (int j = i, k=0; k < step; j++,k++)
+//             {
+//                 if (s[j]==part[k])
+//                 {
+//                     found=1;
+//                     continue;
+//                 }
+//                 else{
+//                     found=0;
+//                     break;
+//                 }
+//             }
+//             if (found==1)
+//             {
+//                 int m=i;
+//                 for (; s[m+step]!='\0'; m++)
+//                 {
+//                     s[m]=s[m+step];
+//                 }
+//                 for (int i = 0; i < step; i++)
+//                 {
+//                     s.pop_back();
+//                 }
+//                 found=0;
+//                 i=-1;
+                
+//             }
+//         }
+//     }
+//     traverseArray(s);
+
+// String Compression
+
+    // string s="abbbbbccccccccccccccccccccdddde", ans;
+    // vector<char> chars={'a','a','b','b','b','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c','c'}, ans;
+    // int i=0, count=0;
+    // char c=chars[i];
+    // while (i<chars.size())
+    // {
+    //     if (chars[i]==c)
+    //     {
+    //         count++;
+    //     }
+    //     else{
+    //         ans.push_back(c);
+    //         if (count>1)
+    //         {
+    //             vector<char> tmp;
+    //             while (count)
+    //             {
+    //                 tmp.push_back('0'+ count%10);
+    //                 count/=10;
+    //             }
+    //             reverse(tmp.begin(), tmp.end());
+    //             traverseArray(tmp);
+    //             for (int i = 0; i < tmp.size(); i++)
+    //             {
+    //                 ans.push_back(tmp[i]);
+    //             }
+    //         }
+            
+    //         c=chars[i];
+    //         count=1;
+    //     }
+    //     i++;
+    // }
+    // ans.push_back(c);
+    // if (count>1)
+    // {
+    //     vector<char> tmp;
+    //     while (count)
+    //     {
+    //         tmp.push_back('0'+ count%10);
+    //         count/=10;
+    //     }
+    //     reverse(tmp.begin(), tmp.end());
+    //     for (int i = 0; i < tmp.size(); i++)
+    //     {
+    //         ans.push_back(tmp[i]);
+    //     }
+        
+    // }
+    // traverseArray(ans);
+
+// Remove All Adjacent Duplicates In String
+    // string s="azxxzy";
+    // stack<char> st;
+
+    // for (int i = 0; i < s.length(); i++)
+    // {
+    //     if (st.empty())
+    //     {
+    //         st.push(s[i]);
+    //     }
+    //     else if (st.top()==s[i])
+    //     {
+    //         st.pop();
+    //     }
+    //     else{
+    //         st.push(s[i]);
+    //     }
+    // }
+    // string ans;
+    // while (!st.empty())
+    // {
+    //     ans.push_back(st.top());
+    //     st.pop();
+    // }
+    // reverse(ans.begin(), ans.end());
+    // traverseArray(ans);
+    
+
 
     return 0;
 }

@@ -52,10 +52,24 @@ int main(){
     //     swap(arr[l], arr[r]);
     // }
     // traverseArray(arr, size);
-    for (int i = 1; i < 50; i++)
-    {
-        cout<<i%5<<" ";
-    }
-    cout<<endl;
+    // for (int i = 1; i < 50; i++)
+    // {
+    //     cout<<i%5<<" ";
+    // }
+    // cout<<endl;
+
+    // string s="abcabcabc";
+    // int k=1;
+    // cout<<s.length()<<endl;
+    // for (int  i = 1; s[i]!='\0'; i++)
+    // {
+    //     s[i]=s[i+1];
+    // }
+    // cout<<s<<endl;
+    // s[2]=s[3];
+    // cout<<s.length()<<endl;
+    int i=6;
+    char c='0'+ i;
+    cout<<c<<endl;
     return 0;
 }
