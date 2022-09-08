@@ -69,7 +69,8 @@ int main(){
     // s[2]=s[3];
     // cout<<s.length()<<endl;
     int i=6;
-    char c='0'+ i;
-    cout<<c<<endl;
+    // char c='0'+ i;
+    // cout<<c<<endl;
+    cout<<(i & 1)<<endl;
     return 0;
 }
