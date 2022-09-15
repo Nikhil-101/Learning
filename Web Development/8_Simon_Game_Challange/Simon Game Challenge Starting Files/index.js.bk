@@ -1,0 +1,104 @@
+let arr=[];
+let turns=[];
+let ptr=0, lvl=1;
+for (let index = 0; index < $(".btn").length; index++) {
+    arr.push($(".btn")[index].id);
+}
+$("body").keydown(function(Event){
+    if (Event.key=='A' || Event.key=='a') {
+        alert("Working");
+        $("#level-title").text("Level "+lvl);
+        turn();
+    }
+})
+
+$(".btn").click(function(){
+    checkClick($(this).attr("id"));
+})
+
+function checkClick(key){
+    if (key==turns[ptr]) {
+        mouseClick(key);
+        ptr++;
+        if (ptr>=turns.length) {
+            lvl++;
+            ptr=0;
+            $("#level-title").text("Level "+lvl);
+            turn();
+        }
+    }
+    else{
+        gameOverAnimation();
+        playSound("sounds/wrong.mp3");
+        $("#level-title").text("Game Over, Press any key to restart!!!");
+        turns.splice(0, turns.length);
+        ptr=0;
+        lvl=1;
+        $("body").keydown(function(){
+            start();
+        })
+        // $("body").unbind();
+    }
+    
+}
+
+function mouseClick(key){
+    if (key!=turns[ptr]) {
+        
+    }
+    clickAnimation(key);
+    switch (key) {
+        case "green":
+            playSound("sounds/green.mp3");
+            break;
+        case "red":
+            playSound("sounds/red.mp3");
+            break;
+        case "yellow":
+            playSound("sounds/yellow.mp3");
+            break;
+        case "blue":
+            playSound("sounds/blue.mp3");
+            break;
+    
+        default:
+            alert("ERROR!!!");
+            break;
+    }
+}
+
+function gameOverAnimation(){
+    $("body").addClass("game-over");
+    setTimeout(() => {
+        $("body").removeClass("game-over");
+    }, 150);
+}
+
+function clickAnimation(key){
+    $("#"+key).addClass("pressed");
+    setTimeout(function(){
+        $("#"+key).removeClass("pressed");
+}, 100);
+}
+
+function fadeAnimation(key){
+    $("#"+key).fadeOut();
+    setTimeout(function(){
+        $("#"+key).fadeIn();
+    }, 150)
+}
+
+function playSound(url){
+    new Audio(url).play();
+}
+
+function turn(){
+    let rand=Math.floor(Math.random()*10)%4;
+    turns.push(arr[rand]);
+    fadeAnimation(arr[rand]);
+}
+
+function start(){
+    $("level-title").text("Press A Key to Start");
+    turn();
+}
