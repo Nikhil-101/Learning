@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="box" id="heading">
+        <h1> <%= date %> </h1>
+    </div>
+
+    <div class="box">
+        <% newItems.forEach(element => { %>
+        <div class="item">
+            <input type="checkbox">
+            <p> <%= element %> </>
+        </div>
+        <% }) %>
+        <form class="item" action="/" method="post">
+            <input type="text" name="userInput" id="user-input" placeholder="What's on your mind" autocomplete="off">
+            <button type="submit">+</button>
+        </form>
+    </div>
+
+</body>
+</html>
