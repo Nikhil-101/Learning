@@ -24,12 +24,12 @@ int main(){
     // string s="abc";
     // cout<<s[0]<<endl;
 
-    vector<string> map={"", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-    string str="23", output;
-    cout<<map[str[1]-1].length()<<endl;
-    cout<<str[0]-'0'<<endl;
-    cout<<map[str[0]-'0']<<endl;
-    
+    // vector<string> map={"", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    // string str="23", output;
+    // cout<<map[str[1]-1].length()<<endl;
+    // cout<<str[0]-'0'<<endl;
+    // cout<<map[str[0]-'0']<<endl;
+    cout<<6/2<<endl;
     
     return 0;
 }

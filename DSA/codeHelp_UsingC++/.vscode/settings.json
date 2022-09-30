@@ -3,5 +3,7 @@
         "ostream": "cpp",
         "random": "cpp",
         "iostream": "cpp"
-    }
+    },
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', Consolas, 'Courier New', monospace"
 }
