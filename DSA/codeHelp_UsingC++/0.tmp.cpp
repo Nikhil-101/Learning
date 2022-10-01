@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<map>
 using namespace std;
 
 void swap(int &a, int &b)
@@ -29,7 +30,12 @@ int main(){
     // cout<<map[str[1]-1].length()<<endl;
     // cout<<str[0]-'0'<<endl;
     // cout<<map[str[0]-'0']<<endl;
-    cout<<6/2<<endl;
+    // cout<<6/2<<endl;
+
+    map<int, bool> names;
+    names[100]=true;
+
+    cout<<names[101]<<endl;
     
     return 0;
 }
