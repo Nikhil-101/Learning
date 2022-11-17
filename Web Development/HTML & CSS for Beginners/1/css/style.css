@@ -1,0 +1,45 @@
+body{
+  text-align: center;
+  background-color: aquamarine;
+  margin: 0;
+}
+
+h1{
+  background-color: pink;
+  color: black;
+}
+
+div{
+  font-size: 25px;
+  padding: 30px 10%;
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+.top-section{
+  background-color: bisque;
+  font-size: 30px;
+}
+
+.highlight{
+  background-color: yellow;
+}
+
+.bottom-section{
+  background-color: antiquewhite;
+}
+
+.line-through{
+  text-decoration: line-through;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.overline{
+  text-decoration: overline;
+}
