@@ -36,7 +36,7 @@ const result=compare(userInput, pcInput);
 
 if (userInput===result) {
     console.log('User Wins!!!');
-}else if(result=='Draw'){
+}else if(result==='Draw'){
     console.log('Its Draw!!!');
 }else {
     console.log('PC Wins!!!');

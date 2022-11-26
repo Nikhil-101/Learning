@@ -1,0 +1,16 @@
+body{
+    padding: 0 30px;
+}
+nav{
+    text-align: right;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+ul li{
+    /* display: inline; */
+    margin-left: 20px;
+}

@@ -1,0 +1,19 @@
+body{
+  text-align: center;
+}
+
+.red{
+  color: red;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.yellow{
+  color: yellow;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.green{
+  color: green;
+}
