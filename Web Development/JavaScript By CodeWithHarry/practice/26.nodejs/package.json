@@ -1,0 +1,12 @@
+{
+  "name": "practice_js",
+  "version": "1.0.0",
+  "description": "Practicing JS with CodeWithHarry",
+  "main": "1.prac.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikhil Dhiman",
+  "license": "ISC"
+}
