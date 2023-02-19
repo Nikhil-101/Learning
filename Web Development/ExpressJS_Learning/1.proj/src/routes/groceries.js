@@ -25,7 +25,6 @@ router.get('/:item', (req, res)=>{
   let {item}=req.params;
   let searchItem=groceries.find((g)=> g.item===item);
   res.send(searchItem);
-  res.sendStatus(200);
 })
 
 router.get('/shopping/cart', (req, res)=>{

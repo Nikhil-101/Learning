@@ -45,7 +45,6 @@ router.get('/:store', (req, res)=>{
 router.post('/', (req, res)=>{
   marketList.push(req.body);
   res.send(marketList);
-  res.sendStatus(201);
 })
 
 module.exports = router;
