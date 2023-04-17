@@ -9,10 +9,12 @@ const sessionRoute=require('./routes/session');
 const authRoute=require('./routes/auth');
 const app = express();
 const PORT = 3000;
+require('./database')
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
+// app.use(mongoose.connect('mongodb://username:password@localhost:27017/expressJS_tutorial'))
 app.use((req, res, nxt)=>{
   console.log(`First Middleware`);
   nxt();
