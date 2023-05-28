@@ -1,0 +1,17 @@
+header, footer{
+  background-color: purple;
+  color: white;
+  text-align: center;
+}
+
+.article-heading{
+  font-family: sans-serif
+}
+
+.italic{
+  font-style: italic;
+}
+
+.auther-name, .article-date{
+  color: grey;
+}

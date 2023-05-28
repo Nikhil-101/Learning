@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+}
+
+.itext{
+  padding: .35em .5em;
+  border: 1px solid hsl(0, 0%, 70%);
+  border-radius: 3px;
+  outline: none;
+  margin: .5em;
+  font-size: inherit;
+}
+
+.itext:focus{
+  border-color: hsl(209, 53%, 45%);
+  box-shadow: 0 0 .5rem 0 hsl(209, 53%, 55%);
+}
+
+.itext.itext-success{
+  border-color: hsl(120, 80%, 40%);
+}
+
+.itext.itext-success:focus{
+  border-color: hsl(124, 80%, 50%);
+  box-shadow: 0 0 .5rem 0 hsl(124, 80%, 70%);
+}
+
+.itext.itext-error{
+  border-color: hsl(0, 70%, 60%);
+}
+
+.itext.itext-error:focus{
+  border-color: hsl(0, 70%, 50%);
+  box-shadow: 0 0 .5rem 0 hsl(0, 70%, 60%);
+}
+
+.itext.itext-large{
+  font-size: 1.2rem;
+}
+
+.itext.itext-small{
+  font-size: .7rem;
+}
+
+.itext.itext-disabled{
+  background-color: hsl(0, 0%, 85%);
+}

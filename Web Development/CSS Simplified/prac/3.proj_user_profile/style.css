@@ -1,0 +1,20 @@
+.page-header{
+  text-align: center;
+}
+
+.green-section{
+  background-color: green;
+  color: hsl(0, 0%, 100%);
+}
+
+.section-header{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-first-item{
+  color: cyan;
+}
+
+.section-last-item{
+  text-decoration-line: line-through;
+}

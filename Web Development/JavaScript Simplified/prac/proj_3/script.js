@@ -6,3 +6,5 @@ btns.forEach(btn =>{
     btn.dataset.clicks = currentClick + 1
   })
 })
+
+
