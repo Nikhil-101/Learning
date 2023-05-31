@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: grey;
+  font-family: sans-serif;
+}
+
+.modal{
+  height: 80vh;
+  width: 900px;
+  max-width: 80vw;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 1rem 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.title{
+  font-size: 1.5rem;
+}
+
+.close-button{
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.body{
+  flex-grow: 1;
+  overflow: auto;
+  padding: .3rem 1rem;
+}
+
+.footer{
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.1rem .4rem;
+  border-top: 1px solid lightgray;
+}
+
+.btn{
+  margin: .3rem;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 80%);
+  border: 1px solid hsl(0, 0%, 60%);
+  border-radius: 3px;
+  outline: none;
+  padding: .2rem .7rem;
+  font-size: inherit;
+}
+
+.btn:focus{
+  background-color: hsl(0, 0%, 60%);
+  border-color: hsl(0, 0%, 50%);
+}
+
+.btn:hover{
+  background-color: hsl(0, 0%, 90%);
+  border-color: hsl(0, 0%, 70%);
+}
+
+.btn.btn-primary{
+  background-color: hsl(180, 97%, 40%);
+  color: white;
+  border-color: hsl(180, 97%, 30%);
+}
+
+.btn.btn-danger{
+  background-color: hsl(0, 100%, 30%);
+  color: white;
+  border-color: hsl(0, 100%, 20%);
+}
