@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+  display: grid;
+  grid-template: auto auto 1fr auto / 1fr 150px;
+  grid-template-areas: 
+    "title title"
+    "navbar side"
+    "content side"
+    "foot foot";
+  min-height: 100vh;
+}
+
+.title{
+  grid-area: title;
+  padding: .5rem 0rem;
+  border-bottom: 1px solid black;
+  font-size: 1.5rem;
+}
+
+.navbar{
+  grid-area: navbar;
+}
+
+.title, .navbar, .footer{
+  background-color: hsl(220, 65%, 50%);
+  color: white;
+  text-align: center;
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.link{
+  list-style: none;
+  padding: .5rem .7rem;
+}
+
+.main{
+  grid-area: content;
+}
+
+.main article h2, .main article p{
+  margin: .5rem 0;
+}
+
+.main, .sidebar{
+  padding: 0rem .3rem;
+}
+
+.sidebar{
+  grid-area: side;
+  background-color: hsl(220, 85%, 30%);
+  color: white;
+}
+
+.footer{
+  grid-area: foot;
+  padding: .5rem 0rem;
+}
+

@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+}
+
+.header{
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-links{
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+.navbar-link, .brand-logo{
+  padding: .4rem .5rem;
+  cursor: pointer;
+}
+
+.navbar-link:hover{
+  background-color: hsl(0, 0%, 50%);
+}
