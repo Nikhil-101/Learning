@@ -133,6 +133,7 @@ body{
 
 .contact-section input{
   width: 100%;
+  font-size: 3em;
 }
 
 .contact-section textarea{
