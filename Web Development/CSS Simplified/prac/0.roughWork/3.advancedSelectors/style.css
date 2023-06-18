@@ -1,0 +1,49 @@
+/* selects all the spans in nesting */
+/* div span{
+  background-color: red;
+} */
+
+/* selects the outer span or only one level below span */
+/* div > span{
+  background-color: green;
+} */
+
+/* selects the siblings of h1 & previous siblings are't selected to h1 */
+/* h1 ~ p{
+  background-color: grey;
+} */
+
+/* selects the 1st sibling of h1 here */
+/* h1 + p{
+  background-color: yellow;
+} */
+
+/* selects the not condition */
+/* p:not(.red):not(.green){
+  background-color: green;
+} */
+
+/* Chacks the attributes of a tag so similar tag with different attribute isn't checked */
+/* this has to have exact value of type */
+/* input[type="text"]{
+  background-color: beige;
+} */
+
+/* p[data-attribute]{
+  background-color: brown;
+} */
+
+/* cheaks weather the attribute contains anywhere in tag */
+/* p[data-attribute*="ll"]{
+  color: red;
+} */
+
+/* checks weather the value on tag starts with the given value */
+/* p[data-attribute^="ll"]{
+  color: red;
+} */
+
+/* this checks the value at the end */
+/* p[data-attribute&="ll"]{
+  color: red;
+} */

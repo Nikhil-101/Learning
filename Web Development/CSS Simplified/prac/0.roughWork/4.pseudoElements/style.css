@@ -1,0 +1,19 @@
+.box{
+  /* width: 35px; */
+  /* height: 35px; */
+  display: inline;
+  background-color: red;
+}
+
+p::first-letter{
+  font-size: 2em;
+}
+
+.box::after{
+  content: ' After';
+}
+/* Dynamically adds the content in the webpage using CSS */
+.box::before{
+  content: attr(data-attributes);
+}
+
