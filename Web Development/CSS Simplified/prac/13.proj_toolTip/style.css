@@ -1,0 +1,34 @@
+*{
+  box-sizing: border-box;
+}
+
+.hover-text{
+  cursor: pointer;
+  position: relative;
+}
+
+.hover-text::after,
+.hover-text::before{
+  --bk-color: #333;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, var(--y-axis));
+}
+
+.hover-text:hover::before{
+  content: attr(data-tooltip);
+  background-color: var(--bk-color);
+  color: white;
+  padding: .2em;
+  border-radius: .3em;
+  width: max-content;
+  max-width: 100%;
+  --y-axis: calc(100% + .2em)
+}
+
+.hover-text:hover::after{
+  content: '';
+  border: .5em solid transparent;
+  border-bottom-color: var(--bk-color);
+  --y-axis: .8rem
+}
