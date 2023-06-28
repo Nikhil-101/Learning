@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+  height: 100vh;
+}
+
+
+.btn{
+  background-color: hsl(240, 40%, 60%);
+  color: white;
+  border: 1px solid hsl(240, 40%, 43%);
+  border-radius: .2em;
+  padding: .3em;
+  cursor: pointer;
+  outline: none;
+  transition: background-color .3s;
+}
+
+.btn.hide:hover{
+  background-color: hsl(240, 40%, 48%);
+  transition: background-color 300ms;
+}
+
+.btn.hide:focus{
+  background-color: transparent;
+  color: transparent;
+  border: transparent;
+  transition-property: background-color, color, border;
+  transition-duration: .3s;
+}
+
+.btn.color:focus{
+  background-color: hsl(10, 50%, 50%);
+  color: black;
+  border: hsl(10, 50%, 50%);
+  transition-property: background-color, color, border;
+  transition-duration: .3s;
+}
