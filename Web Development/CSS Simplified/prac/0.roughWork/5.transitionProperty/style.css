@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box;
+}
+
+.one{
+  width: 10rem;
+  height: 10rem;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  transition-delay: 1s;
+}
+
+.one:hover{
+  background-color: black;
+  color: red;
+  /* transition-property: background-color, color;
+  transition-duration: 1s; */
+}

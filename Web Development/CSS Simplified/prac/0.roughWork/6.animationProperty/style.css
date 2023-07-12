@@ -1,0 +1,30 @@
+*{
+  box-sizing: border-box;
+}
+
+.one{
+  width: 20rem;
+  height: 20rem;
+  font-size: 5rem;
+  color: green;
+  background-color: red;
+}
+
+.one:hover{
+  animation-name: color-change;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes color-change{
+  from{
+
+  }
+  
+  to {
+    background-color: green;
+    color: red;
+  }
+}
