@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.one{
+  width: 10rem;
+  height: 10rem;
+  color: red;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation-name: horizontal-walk;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.one:hover{
+  animation-play-state: paused;
+}
+
+@keyframes horizontal-walk {
+  from{
+    transform: translateX(0vw);
+  }
+  to{
+    transform: translateX(calc(100vw - 100%));
+  }
+}
