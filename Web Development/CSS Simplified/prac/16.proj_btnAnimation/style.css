@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  background-color: hsl(150, 70%, 50%);
+  color: white;
+  border: 2px solid hsl(150, 80%, 40%);
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover{
+  background-color: hsl(150, 60%, 60%);
+  border-color: hsl(150, 80%, 35%);
+  animation-name: bounce-up;
+  animation-timing-function: linear;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bounce-up {
+  from{
+
+  }
+  to{
+    transform: scale(1.05);
+  }
+}
+
+.btn:focus{
+  background-color: hsl(150, 80%, 40%);
+  animation-name: bounce-in-out;
+  animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bounce-in-out {
+  from{
+    transform: scale(.9);
+  }
+  to{
+    transform: scale(1.05);
+  }
+}
