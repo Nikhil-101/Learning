@@ -1,0 +1,65 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.btn{
+  
+  background-color: hsl(150, 70%, 50%);
+  color: white;
+  border: 2px solid hsl(150, 80%, 40%);
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  margin: 20px 10px;
+  position: relative;
+}
+
+.btn:focus::after{
+  --default-transform: translateY(200%);
+
+  content: 'Loading';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: black;
+  transform: var(--default-transform);
+  animation-name: loading;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+/* .btn:focus{
+  
+} */
+
+@keyframes loading {
+  /* 0%{
+    --visible: 'Loading';
+  } */
+  25%{
+    content: 'Loading.';
+    transform: var(--default-transform) rotate(45deg);
+  }
+  50%{
+    content: 'Loading..';
+    transform: var(--default-transform) rotate(0deg);
+  }
+  75%{
+    content: 'Loading...';
+    transform: var(--default-transform) rotate(-45deg);
+  }
+  100%{
+    content: 'Loaded';
+    transform: var(--default-transform) rotate(0deg);
+  }
+}
