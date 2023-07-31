@@ -1,0 +1,69 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* perspective: 400px; */
+  
+}
+
+.cube{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 400px;
+  transform-style: preserve-3d;
+}
+
+.cube:hover{
+  animation: spin 5s linear infinite;
+}
+
+.side{
+  --size: 100px;
+  width: var(--size);
+  height: var(--size);
+  background-color: hsla(160, 100%, 75%, .5);
+  border: 1px solid hsla(160, 100%, 15%, .5);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right{
+  transform: rotateY(90deg) translateZ(calc(var(--size) / 2));
+}
+
+.left{
+  transform: rotateY(-90deg) translateZ(calc(var(--size) / 2));
+}
+
+.front{
+  transform: translateZ(calc(var(--size) / 2));
+}
+
+.top{
+  transform: rotateX(90deg) translateZ(calc(var(--size) / 2));
+}
+
+.bottom{
+  transform: rotateX(-90deg) translateZ(calc(var(--size) / 2));
+}
+
+.back{
+  transform: translateZ(calc(var(--size) / -2));
+}
+
+@keyframes spin {
+  from{
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to{
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
