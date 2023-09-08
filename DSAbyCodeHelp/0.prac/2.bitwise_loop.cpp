@@ -54,55 +54,71 @@ int main(){
   // ----------------------------
   // Convert a number into -ive number
   // Binary Representation
-  int pnum=7, nnum=0, binary=0, n=0;
-  while (pnum!=0)
+//   int pnum=7, nnum=0, binary=0, n=0;
+//   while (pnum!=0)
+//   {
+//     int bit=pnum&1;
+//     binary=binary+(bit*pow(10, n));
+//     pnum>>=1;
+//     n++;
+//   }
+//   cout<<"Binary: "<<binary<<endl;
+// // 1's Compliment
+//   n=0;
+//   int tmp=binary;
+//   binary=0;
+//   while (tmp!=0)
+//   {
+//     int digit=tmp%10;
+//     if (digit==0)
+//     {
+//       digit=1;
+//     }
+//     else if(digit==1){
+//       digit=0;
+//     }
+//     binary=binary+digit*(pow(10, n));
+//     tmp/=10;
+//     n++;
+//   }
+
+//   cout<<"1's Compliment Binary: "<<binary<<endl;
+//   // Adding 1 bit
+//   n=0;
+//   int carry=1;
+//   while (binary!=0 || carry!=0)
+//   {
+//     int digit = binary%10;
+//     if (digit==0 && carry==1)
+//     {
+//       digit=1;
+//       carry=0;
+//     }
+//     else if(digit==1 && carry==1){
+//       digit=0;
+//       carry=1;
+//     }
+//     nnum=nnum+digit*(pow(10, n));
+//     binary/=10;
+//     n++;
+//   }
+//   cout<<nnum<<endl;
+// ----------------------------
+// Complement of a number
+  int n=5, mask=INT32_MAX, tmp=n;
+  if (n==0)
   {
-    int bit=pnum&1;
-    binary=binary+(bit*pow(10, n));
-    pnum>>=1;
-    n++;
+    return 1;
   }
-  cout<<"Binary: "<<binary<<endl;
-// 1's Compliment
-  n=0;
-  int tmp=binary;
-  binary=0;
+  
   while (tmp!=0)
   {
-    int digit=tmp%10;
-    if (digit==0)
-    {
-      digit=1;
-    }
-    else if(digit==1){
-      digit=0;
-    }
-    binary=binary+digit*(pow(10, n));
-    tmp/=10;
-    n++;
+    mask<<=1;
+    tmp>>=1;
+    cout<<"123"<<endl;
   }
-
-  cout<<"1's Compliment Binary: "<<binary<<endl;
-  // Adding 1 bit
-  n=0;
-  int carry=1;
-  while (binary!=0 || carry!=0)
-  {
-    int digit = binary%10;
-    if (digit==0 && carry==1)
-    {
-      digit=1;
-      carry=0;
-    }
-    else if(digit==1 && carry==1){
-      digit=0;
-      carry=1;
-    }
-    nnum=nnum+digit*(pow(10, n));
-    binary/=10;
-    n++;
-  }
-  cout<<nnum<<endl;
+  
+  cout<<((~n)^mask)<<endl;
 
   return 0;
 }
