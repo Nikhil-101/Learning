@@ -154,30 +154,31 @@ int main(){
   //   ch++;
   // }
   // -------------------
-  int num=7;
-  int i=0,j=0,k=0,l=0;
-  while (i<num)
-  {
-    while (j<num-i-1)
-    {
-      cout<<' ';
-      j++;
-    }
-    while (k<=i)
-    {
-      cout<<k+1;
-      k++;
-    }
-    while (l<i)
-    {
-      cout<<i-l;
-      l++;
-    }
-    cout<<endl;
-    i++;
-    j=0;
-    k=0;
-    l=0;
-  }
+  //   int num=7;
+  //   int i=0,j=0,k=0,l=0;
+  //   while (i<num)
+  //   {
+  //     while (j<num-i-1)
+  //     {
+  //       cout<<' ';
+  //       j++;
+  //     }
+  //     while (k<=i)
+  //     {
+  //       cout<<k+1;
+  //       k++;
+  //     }
+  //     while (l<i)
+  //     {
+  //       cout<<i-l;
+  //       l++;
+  //     }
+      // cout<<endl;
+  //     i++;
+  //     j=0;
+  //     k=0;
+  //     l=0;
+  //   }
+
   return 0;
 }
