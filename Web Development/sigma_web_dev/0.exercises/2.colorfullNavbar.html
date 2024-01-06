@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    :root{
+      --background-nav-color: antiquewhite;
+      --nav-color: rgb(176, 58, 244);
+    }
+    body{
+      padding: 0;
+      margin: 0;
+    }
+    
+    nav{
+      padding: 1rem 2rem;
+      background-color: var(--background-nav-color);
+    }
+
+    .nav-webicon, .nav-links{
+      display: inline;
+    }
+
+    .nav-webicon{
+      font-size: x-large;
+    }
+
+    .nav-links{
+      text-align: right;
+      float: right;
+      font-size: larger;
+    }
+    
+    .nav-links a{
+      display: inline;
+      margin: 0 1.7rem;
+      text-decoration: none;
+      color: var(--nav-color);
+    }
+
+    .nav-links a:hover{
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-webicon">
+      <a href="">CodeWithMe</a>
+    </div>
+    <div class="nav-links">
+      <a href="">Home</a>
+      <a href="">Blog</a>
+      <a href="">About Me</a>
+      <a href="">Work With Us</a>
+    </div>
+  </nav>
+</body>
+</html>

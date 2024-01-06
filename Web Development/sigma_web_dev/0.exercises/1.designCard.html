@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: azure;
+      }
+      .card {
+        width: 350px;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 10px;
+        background-color: white;
+      }
+
+      .card-img {
+        /* display: inline-block; */
+        width: 350px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+      }
+
+      .card-body {
+        margin: 10px 12px;
+      }
+
+      .card-tags {
+        border: 1px solid rgb(191, 191, 191);
+        border-radius: 99px;
+        padding: 3px 7px;
+        margin: 10px;
+        font-weight: 900;
+      }
+
+      .submit-btn {
+        /* align-items: center; */
+        /* text-align: center; */
+        /* display: inline-block; */
+        margin: 5px auto 0 auto;
+        background-color: rgb(234, 250, 255);
+        color: deepskyblue;
+        padding: 12px 20px;
+        border-radius: 99px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .card-heading {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .card-body-text,
+      .card-tags {
+        font-weight: 200;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .btn-container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        class="card-img"
+        src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
+        alt="card-sunset-img"
+      />
+
+      <div class="card-body">
+        <div>
+          <span class="card-tags">Nature</span>
+          <span class="card-tags">Sunset</span>
+        </div>
+
+        <h2 class="card-heading">Beautiful Sunset View</h2>
+        <p class="card-body-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et recusandae
+          ullam mollitia enim voluptates reiciendis dicta, voluptatem explicabo,
+          nulla cupiditate officia, praesentium temporibus illum esse magni
+          corporis iusto incidunt nostrum dolor laborum ab. Fugiat, ullam.
+        </p>
+
+        <div class="btn-container">
+          <input class="submit-btn" type="button" value="Read More" />
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
