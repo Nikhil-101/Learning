@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAVBAR</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .navbar{
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20rem;
+    }
+    .icon{
+      width: 2rem;
+      height: 2rem;
+      background-color: aqua;
+      margin: .5rem;
+      border-radius: 5px;
+    }
+    .branding{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .nav-links>ol>li{
+      list-style: none;
+      display: inline-block;
+      margin: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="branding">
+        <div class="icon"></div>
+        <h1 class="product-name">UltraEdit</h1>
+      </div>
+      <div class="nav-links">
+        <ol>
+          <li>Products</li>
+          <li>Pricing</li>
+          <li>Resources</li>
+          <li>About us</li>
+        </ol>
+      </div>
+    </nav>
+  </header>
+</body>
+</html>
