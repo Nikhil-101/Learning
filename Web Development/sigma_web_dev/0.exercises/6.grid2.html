@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      display: grid;
+      grid-template-areas: "nav nav"
+                           "sidebar mainContent"
+                           "testimonials testimonials"
+                           "footer footer";
+      grid-template-columns: 1fr 5fr;
+    }
+    nav{
+      grid-area: nav;
+      justify-self: center;
+    }
+    .sidebar{
+      grid-area: sidebar;
+      justify-self: center;
+    }
+    .mainContent{
+      grid-area: mainContent;
+      justify-self: center;
+    }
+    .testimonials{
+      grid-area: testimonials;
+      justify-self: center;
+    }
+    footer{
+      grid-area: footer;
+      justify-self: center;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <p>NAVBAR</p>
+  </nav>
+  <div class="sidebar">
+    <p>sidebar</p>
+  </div>
+  <div class="mainContent">
+    <p>MAIN content</p>
+  </div>
+  <div class="testimonials">
+    <p>testimonials</p>
+  </div>
+  <footer>
+    <p>FOOTER</p>
+  </footer>
+</body>
+</html>
