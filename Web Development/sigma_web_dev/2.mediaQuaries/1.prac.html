@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div:first-child{
+      background-color: red;
+    }
+    div:nth-child(2){
+      background-color: teal;
+      color: white;
+    }
+
+    @media only screen and (max-width:800px){
+      div:first-child{
+        background-color: black;
+        color: white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>1st div</p>
+  </div>
+  <div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, dolorem. Itaque magnam quia ex autem consequuntur consectetur cumque ea adipisci, in voluptatum excepturi eum quaerat, placeat eius cupiditate voluptate! Praesentium sed distinctio labore culpa?</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      border: 2px solid black;
+      width: 100vw;
+      height: 50vh;
+      background-color: azure;
+
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+      align-items: center;
+      /* flex-wrap: wrap; */
+      flex-flow: wrap row;
+
+    }
+    .box{
+      height: 5rem;
+      width: 5rem;
+      border: 2px solid black;
+      /* margin: 5px; */
+      background-color: aquamarine;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>

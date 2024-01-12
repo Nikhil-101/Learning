@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root{
+      --side: 100px;
+    }
+
+    *{
+      box-sizing: border-box;
+    }
+
+    .container{
+      width: 100vw;
+      min-height: 80vh;
+      background-color: aquamarine;
+      border: 2px solid black;
+      border-radius: 10px;
+
+      display: grid;
+      grid-template-rows: 120px 150px 120px;
+      grid-template-columns: 120px 170px 120px;
+      gap: 50px;
+      justify-items: center;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .box{
+      width: var(--side);
+      height: var(--side);
+      background-color: lightsalmon;
+      border: 2px solid black;
+      border-radius: 5px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: xx-large;
+    }
+
+    .box3{
+      grid-row: 1/4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container .apply-grid">
+    <div class="box box1">1</div>
+    <div class="box">2</div>
+    <div class="box box3">3</div>
+    <div class="box">4</div>
+    <div class="box box5">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+  </div>
+</body>
+</html>
