@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    p{
+      margin: 10px;
+    }
+  
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15rem;
+    }
+  
+    .icon {
+      width: 2rem;
+      height: 2rem;
+      background-color: aqua;
+      margin: .5rem;
+      border-radius: 5px;
+    }
+  
+    .branding {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  
+    .nav-links>ol>li {
+      list-style: none;
+      display: inline-block;
+      margin: 1rem;
+      cursor: pointer;
+    }
+
+    .downOptions{
+      display: grid;
+      grid-template-columns: repeat(3, 17rem);
+      row-gap: 10px;
+      column-gap: 15px;
+      width: 100vw;
+      justify-content: center;
+      align-content: center;
+      background-color: beige;
+    }
+
+    .langSetup{
+      border: 2px solid black;
+
+    }
+
+    .lang{
+      font-size: x-large;
+    }
+    .btn{
+      border: none;
+      padding: .5rem .5rem;
+      margin: .5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+    }
+    .btn-blue{
+      background-color: #08d6d3;
+    }
+    .btn-green{
+      background-color: green;
+    }
+    .btn-container{
+      display: flex;
+    }
+
+    @media only screen and (max-width:850px){
+      .downOptions{
+        grid-template-columns: 17rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="branding">
+        <div class="icon"></div>
+        <h1 class="product-name">UltraEdit</h1>
+      </div>
+      <div class="nav-links">
+        <ol>
+          <li>Products</li>
+          <li>Pricing</li>
+          <li>Resources</li>
+          <li>About us</li>
+        </ol>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="downOptions">
+      <div class="langSetup">
+        <p class="lang">English</p>
+        <p class="country">India</p>
+        <div class="btn-container">
+          <input type="button" value="Download 32-bit" class="btn btn-blue">
+          <input type="button" value="Download 64-bit" class="btn btn-green"></div>
+      </div>
+      <div class="langSetup">
+        <p class="lang">English1</p>
+        <p class="country">India</p>
+        <div class="btn-container">
+          <input type="button" value="Download 32-bit" class="btn btn-blue">
+          <input type="button" value="Download 64-bit" class="btn btn-green"></div>
+      </div>
+      <div class="langSetup">
+        <p class="lang">English2</p>
+        <p class="country">India</p>
+        <div class="btn-container">
+          <input type="button" value="Download 32-bit" class="btn btn-blue">
+          <input type="button" value="Download 64-bit" class="btn btn-green"></div>
+      </div>
+      <div class="langSetup">
+        <p class="lang">English3</p>
+        <p class="country">India</p>
+        <div class="btn-container">
+          <input type="button" value="Download 32-bit" class="btn btn-blue">
+          <input type="button" value="Download 64-bit" class="btn btn-green"></div>
+      </div>
+      <div class="langSetup">
+        <p class="lang">English</p>
+        <p class="country">India</p>
+        <div class="btn-container">
+          <input type="button" value="Download 32-bit" class="btn btn-blue">
+          <input type="button" value="Download 64-bit" class="btn btn-green"></div>
+      </div>
+      <div class="langSetup">
+        <p class="lang">English</p>
+        <p class="country">India</p>
+        <div class="btn-container">
+          <input type="button" value="Download 32-bit" class="btn btn-blue">
+          <input type="button" value="Download 64-bit" class="btn btn-green"></div>
+      </div>
+      <div class="langSetup">
+        <p class="lang">English</p>
+        <p class="country">India</p>
+        <div class="btn-container">
+          <input type="button" value="Download 32-bit" class="btn btn-blue">
+          <input type="button" value="Download 64-bit" class="btn btn-green"></div>
+      </div>
+      <div class="langSetup">
+        <p class="lang">English</p>
+        <p class="country">India</p>
+        <div class="btn-container">
+          <input type="button" value="Download 32-bit" class="btn btn-blue">
+          <input type="button" value="Download 64-bit" class="btn btn-green"></div>
+      </div>
+      <div class="langSetup">
+        <p class="lang">English</p>
+        <p class="country">India</p>
+        <div class="btn-container">
+          <input type="button" value="Download 32-bit" class="btn btn-blue">
+          <input type="button" value="Download 64-bit" class="btn btn-green"></div>
+      </div>
+      <div class="langSetup">
+        <p class="lang">English</p>
+        <p class="country">India</p>
+        <div class="btn-container">
+          <input type="button" value="Download 32-bit" class="btn btn-blue">
+          <input type="button" value="Download 64-bit" class="btn btn-green"></div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
