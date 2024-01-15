@@ -1,0 +1,248 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+}
+
+header{
+  background-image: url('assets/images/netflix_header_bg.jpg');
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+p{
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo{
+  width: 10rem;
+  stroke: red;
+  fill: red;
+}
+
+.nav-links{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-text{
+  width: 80%;
+  margin: auto;
+}
+
+.header-text *{
+  text-align: center;
+}
+
+/* Main Section */
+
+/* Section: TV */
+
+.sec-tv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.tv-img{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.tv-img video{
+  grid-area: 1/2;
+  transform: translate(4px, -9px);
+  object-fit: cover;
+}
+
+.tv-img img{
+  grid-area: 1/2;
+  z-index: 1;
+}
+
+/* Section: download-show */
+
+.download-show{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.mobileBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  border: 2px solid rgb(97, 97, 97);
+  border-radius: 12px;
+  width: max-content;
+  padding: .5rem .5rem;
+  grid-area: 1/2;
+  background-color: black;
+  transform: translateY(6.5rem);
+}
+
+.mobileBox>img:nth-child(1){
+  height: 4rem;
+}
+
+.mobileBox>div>*{
+  padding: .1rem 0;
+  margin: 0;
+}
+
+.mobileBox>div{
+  margin-right: 3rem;
+}
+
+.mobile-card>p{
+  color: #0071eb;
+}
+
+.mobileBox>img:nth-child(3){
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.download-img{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.mobile-img{
+  grid-area: 1/2;
+  height: 70%;
+}
+
+/* Section Watch Everywhere */
+
+.watch-everywhere{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.watch-video{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.watch-video>img, .watch-video>video{
+  grid-area: 1/2;
+}
+
+.watch-video>img{
+  z-index: 1;
+  width: 90%;
+}
+
+.watch-video>video{
+  width: 55%;
+  transform: translateY(-5rem);
+  /* object-fit: cover; */
+}
+
+/* Section: Kids Profile */
+.kids-profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.kids-img>img{
+  width: 80%;
+}
+
+
+.btn{
+  background-color: red;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: .5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: rgb(215, 0, 0);
+  transition: background-color .2s linear;
+}
+
+.btn-large{
+  font-size: 1.4rem;
+  padding: .8rem 1.3rem;
+}
+
+#lang{
+  background-color: black;
+  color: white;
+  padding: .5rem 1rem;
+  border-radius: 4px;
+}
+
+#input-email{
+  background-color: black;
+  color: white;
+  opacity: .6;
+  padding: 1rem 1.3rem;
+  border-radius: 4px;
+  width: 25rem;
+  border: 1px solid white;
+}
+
+.header-email{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+.header-email::placeholder{
+  
+}
