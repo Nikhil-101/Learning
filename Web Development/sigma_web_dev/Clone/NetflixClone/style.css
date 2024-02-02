@@ -13,6 +13,7 @@ body{
 header{
   background-image: url('assets/images/netflix_header_bg.jpg');
   height: 40rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,8 +181,8 @@ p{
 }
 
 .watch-video>video{
-  width: 55%;
-  transform: translateY(-5rem);
+  width: 58%;
+  transform: translateX(-.5rem) translateY(-4.4rem);
   /* object-fit: cover; */
 }
 
