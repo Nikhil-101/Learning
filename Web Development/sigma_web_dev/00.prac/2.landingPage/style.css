@@ -1,0 +1,159 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+header{
+  background-image: url(img/header_image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+header>nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0rem 4vw;
+  background-color: #333;
+}
+
+.logo>img{
+  width: 50%;
+}
+
+.nav-links>ol{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+}
+
+.homeBoard{
+  height: 30rem;
+  text-align: center;
+  position: relative;
+  font-size: 2rem;
+}
+
+.lrg-btn{
+  font-size: 1.2rem;
+}
+
+.heading-text{
+  position: relative;
+  top: 20%;
+  /* text-align: center; */
+}
+
+.arrow-img>img{
+  position: absolute;
+  bottom: 2%;
+  left: 49%;
+  width: 1.7rem;
+}
+
+.heading-text>h1{
+  margin: 0;
+}
+
+.curriculum>h2{
+  text-align: center;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  font-size: smaller;
+}
+
+.flex{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 1rem;
+}
+
+.content>div>img{
+  width: 2rem;
+}
+
+.padding-lr-5{
+  padding: 1.5rem 12vw 5rem
+}
+
+.pricing{
+  background-color: hsl(219, 77%, 55%);
+  color: white;
+  text-align: center;
+  padding: 2rem 30%;
+}
+
+.pricing>h2{
+  font-size: 2rem;
+  margin-top: 0rem;
+}
+
+.pricing>p{
+  font-size: smaller;
+  margin-bottom: 0rem;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form>div{
+  margin-bottom: 1rem;
+}
+
+div.message{
+  margin-bottom: .3rem;
+}
+
+.form>div>p{
+  margin: 0;
+}
+
+.formBtn{
+  text-align: right;
+}
+
+.form>div>input, .form>div>textarea{
+  border: 1px solid #333;
+  border-radius: 4px;
+  height: 1.6rem;
+}
+
+.form>div>textarea{
+  height: 4rem;
+  resize: none;
+}
+
+footer{
+  background-color: #333;
+  /* height: 3rem; */
+  color: white;
+  padding: 1.2rem 0;
+}
+
+footer>h3{
+  text-align: center;
+  margin: 0;
+}
+
+.btn{
+  background-color: hsl(219, 77%, 55%);
+  border: 1px solid hsl(219, 77%, 55%);
+  border-radius: 10px;
+  color: white;
+  padding: .1em .9em;
+  cursor: pointer;
+}
