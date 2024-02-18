@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+.btn-container{
+  background-color: #EEE;
+  min-height: 20vh;
+  padding: 2rem;
+}
+
+.btn{
+  --background-hue: 0;
+  --background-saturation: 0%;
+  --background-lightness: 90%;
+  --border-lightness: calc(var(--background-lightness) - 20%);
+  background-color: hsl(
+    var(--background-hue),
+    var(--background-saturation),
+    var(--background-lightness)
+  );
+  border: 1px solid hsl(
+    var(--background-hue),
+    var(--background-saturation),
+    var(--border-lightness)
+  );
+  outline: none;
+  cursor: pointer;
+  padding: .2em .7em;
+  border-radius: .3em;
+}
+
+.btn:hover{
+  --background-hover-lightness: calc(var(--background-lightness) - 10%);
+
+  background-color: hsl(
+    var(--background-hue),
+    var(--background-saturation),
+    var(--background-hover-lightness)
+  );
+  box-shadow: 0 0 .2em 0 hsl(
+    var(--background-hue),
+    var(--background-saturation),
+    var(--border-lightness)
+  );
+}
+
+.btn-accent, .btn-primary, .btn-danger{
+  color: white;
+}
+
+.btn-primary{
+  --background-hue: 271;
+  --background-saturation: 70%;
+  --background-lightness: 50%
+  /* background-color: hsl(271, 70%, 50%);
+  border: 1px solid hsl(271, 70%, 30%); */
+}
+
+.btn-primary:hover{
+  /* background-color: hsl(271, 70%, 40%);
+  box-shadow: 0 0 .2em 0 hsl(271, 70%, 30%); */
+}
+
+.btn-accent{
+  --background-hue: 200;
+  --background-saturation: 100%;
+  --background-lightness: 40%
+  /* background-color: hsl(200, 100%, 40%);
+  border: 1px solid hsl(200, 100%, 20%); */
+}
+
+.btn-accent:hover{
+  /* background-color: hsl(200, 100%, 30%);
+  box-shadow: 0 0 .2em 0 hsl(200, 100%, 20%); */
+}
+
+.btn-danger{
+  --background-hue: 0;
+  --background-saturation: 60%;
+  --background-lightness: 50%
+  /* background-color: hsl(0, 60%, 50%);
+  border: 1px solid hsl(0, 60%, 30%) */
+}
+
+.btn-danger:hover{
+  /* background-color: hsl(0, 60%, 40%);
+  box-shadow: 0 0 .2em 0 hsl(0, 60%, 30%); */
+}
