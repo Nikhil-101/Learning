@@ -15,7 +15,7 @@ header{
 }
 header>nav{
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -37,7 +37,7 @@ header>nav{
 }
 
 .homeBoard{
-  height: 30rem;
+  height: 39rem;
   text-align: center;
   position: relative;
   font-size: 2rem;
@@ -92,19 +92,88 @@ header>nav{
 
 .pricing{
   background-color: hsl(219, 77%, 55%);
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: max-content;
+  /* line-height: 1.5em; */
+}
+
+.pricing p{
+  margin: .8em 0;
+}
+
+.basic-card,
+.pro-card,
+.preferred-card{
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.basic-card, .pro-card{
+  background-color: rgb(224, 248, 249);
+  width: 15rem;
+  padding: 0rem .7rem 0rem 1rem;
+}
+
+.basic-card{
+  margin-right: -5px;
+}
+
+.cross-font{
+  text-decoration: line-through;
+}
+
+.pro-card{
+  /* padding-left: 2rem; */
+  margin-left: -3px;
+}
+
+.preferred-card{
+  background-color: rgb(253, 249, 245);
+  width: 14rem;
+  padding: 0 1rem;
+  padding-bottom: 1.5rem;
+  z-index: 1;
+}
+
+.price-sec{
   text-align: center;
-  padding: 2rem 30%;
 }
 
-.pricing>h2{
-  font-size: 2rem;
-  margin-top: 0rem;
+.price-sec>p:first-child{
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }
 
-.pricing>p{
-  font-size: smaller;
-  margin-bottom: 0rem;
+.price-unit{
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.price-perks{
+  font-size: 1.1rem;
+  font-weight: 100;
+  color: #666;
+}
+
+@media (max-width: 775px){
+  .pricing{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .pricing>div{
+    width: 100%;
+    text-align: center;
+  }
+  .cross-font{
+    display: none;
+  }
+  .pricing>div{
+    padding: 0;
+  }
 }
 
 .contact{
