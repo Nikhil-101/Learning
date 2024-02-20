@@ -1,0 +1,44 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body{
+  padding-top: 5rem;
+  padding-left: 3rem;
+}
+
+[data-attr]{
+  position: relative;
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after{
+  --move-x: 50%;
+  --arrow-size: .5em;
+  transform: translate(var(--translate-x), var(--translate-y));
+  position: absolute;
+}
+
+.tooltip:hover::before{
+  content: attr(data-attr);
+  background-color: #333;
+  color: white;
+  padding: .1em .3em;
+  left: var(--move-x);
+  --translate-x: calc(-1 * var(--move-x));
+  --translate-y: calc(-100% - var(--arrow-size));
+  /* transform: translate(-50%, calc(-100% - .5em)); */
+  width: max-content;
+  max-width: 100%;
+  border-radius: .2em;
+}
+
+.tooltip:hover::after{
+  content: '';
+  border: .5em solid transparent;
+  border-top-color: #333;
+  right: var(--move-x);
+  --translate-x: var(--move-x);
+  --translate-y: calc(-1 * var(--arrow-size))
+  /* transform: translate(50%, -.5em); */
+}
