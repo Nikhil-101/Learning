@@ -1,0 +1,40 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  margin: 2rem;
+  background-color: hsl(240, 100%, 70%);
+  color: white;
+  outline: none;
+  border: 1px solid hsl(240, 100%, 60%);
+  border-radius: .2em;
+  cursor: pointer;
+  padding: .2em;
+}
+
+.btn:hover{
+  background-color: hsl(240, 100%, 50%);
+  transition-duration: 1s;
+}
+
+.btn.hide:focus{
+  background-color: transparent;
+  color: black;
+  border-color: transparent;
+  transition-duration: 1s;
+}
+
+.btn.color:focus{
+  background-color: red;
+  border-color: hsl(0, 100%, 40%);
+  transition-duration: 1s;
+}
