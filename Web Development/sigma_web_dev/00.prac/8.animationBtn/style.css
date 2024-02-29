@@ -1,0 +1,38 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.btn{
+  font-size: 2rem;
+  outline: none;
+  padding: .2em .4em;
+  background-color: hsl(120, 100%, 50%);
+  border: 2px solid hsl(120, 100%, 30%);
+  color: whitesmoke;
+  border-radius: .2em;
+  /* transform: translate(5rem, 5rem); */
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.btnAnime:hover{
+  animation-name: btn-hover;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes btn-hover{
+  to{
+    transform: scale(1.05)
+  }
+}

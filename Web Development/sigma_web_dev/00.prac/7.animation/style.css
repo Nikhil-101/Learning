@@ -1,0 +1,38 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+.box{
+  height: 7rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color{
+  background-color: red;
+  color: white;
+}
+
+.color:hover{
+  animation: change 5s linear forwards infinite alternate;
+}
+
+@keyframes change{
+  0%{
+      background-color: red;
+  }
+  25%{
+      background-color: bisque;
+  }
+  50%{
+      background-color: blue;
+  }
+  75%{
+      background-color: aqua;
+  }
+  100%{
+      background-color: chartreuse;
+  }
+}
