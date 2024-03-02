@@ -1,0 +1,69 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+
+.cube{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 2000px;
+  transform-style: preserve-3d;
+}
+
+.side{
+  --side-size: 10rem;
+  width: var(--side-size);
+  height: var(--side-size);
+  background-color: hsla(200, 100%, 50%, .1);
+  border: 1px solid hsl(200, 100%, 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.right{
+  transform: rotateY(-90deg) translateZ(calc(var(--side-size)/-2));
+}
+
+.left{
+  transform: rotateY(90deg) translateZ(calc(var(--side-size)/-2));
+}
+
+.top{
+  transform: rotateX(90deg) translateZ(calc(var(--side-size)/2));
+}
+
+.bottom{
+  transform: rotateX(-90deg) translateZ(calc(var(--side-size)/2));
+}
+
+.back{
+  transform: translateZ(calc(var(--side-size)/-2));
+}
+
+.front{
+  transform: translateZ(calc(var(--side-size)/2));
+}
+
+.cube:hover {
+  animation: rotation 4s linear infinite;
+}
+
+@keyframes rotation{
+  0%{
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100%{
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
