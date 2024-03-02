@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.btn{
+  outline: none;
+  position: relative;
+  background-color: hsl(200, 100%, 50%);
+  color: white;
+  border: none;
+  border-radius: .2em;
+  font-size: 2rem;
+  padding: .2em .5em;
+  cursor: pointer;
+  transition: transform .2s ease-out;
+}
+
+.btn:hover{
+  background-color: hsl(200, 100%, 40%);
+  transform: scale(1.1);
+}
+
+.btn:focus{
+  transform: scale(1.05);
+}
+
+.btn::after{
+  content: '';
+  color: black;
+  position: absolute;
+  /* transform: translate(-12rem, 5rem); */
+  left: 0rem;
+  bottom: -5rem;
+}
+
+.btn:focus::after{
+  animation: wiggle 3s linear forwards;
+}
+
+@keyframes wiggle{
+  0%{
+    content: 'Loading';
+  }
+  20%{
+    content: 'Loading.';
+    transform: rotateZ(45deg);
+  }
+  40%{
+    content: 'Loading..';
+    transform: rotateZ(-45deg);
+  }
+  60%{
+    content: 'Loading...';
+    transform: rotateZ(45deg);
+  }
+  80%{
+    content: 'Loading....';
+    transform: rotateZ(-45deg);
+  }
+  90%{
+    content: 'Loading';
+    transform: rotateZ(0deg);
+  }
+  100%{
+    content: 'Loaded';
+    transform: rotateZ(0deg);
+  }
+}
