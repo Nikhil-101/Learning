@@ -15,8 +15,12 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  perspective: 2000px;
-  transform-style: preserve-3d;
+  /* perspective: 2000px; */
+  transform-style: preserve-3d;       /* Important Line */
+}
+
+.cube:hover {
+  animation: rotation 4s linear infinite;
 }
 
 .side{
@@ -53,10 +57,6 @@ body{
 
 .front{
   transform: translateZ(calc(var(--side-size)/2));
-}
-
-.cube:hover {
-  animation: rotation 4s linear infinite;
 }
 
 @keyframes rotation{
