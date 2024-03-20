@@ -1,0 +1,44 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+/* .container{
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnail{
+  width: 18rem;
+  height: 10rem;
+  position: relative;
+  display: inline-block;
+  background-image: url("resources/hqdefault.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: .7em;
+}
+
+.videoTime{
+  background-color: #111;
+  color: white;
+  display: inline;
+  padding: .1em .2em;
+  border-radius: .3em;
+  position: absolute;
+  right: .6em;
+  bottom: .5em;
+}
+
+.titleBody{
+  display: inline-block;
+  margin-left: .4em;
+}
+
+.title{
+  margin-top: .2em;
+  margin-bottom: 0;
+}
+
+.titleBody>p{
+  margin: .7em 0;
+} */
