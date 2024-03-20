@@ -1,0 +1,18 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+/* body{
+  padding: 0;
+} */
+
+.box{
+  --length: 9rem;
+  width: var(--length);
+  height: var(--length);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
