@@ -1,7 +1,9 @@
 *, *::after, *::before{
   box-sizing: border-box;
 }
-
+h3{
+  /* margin: 0; */
+}
 /* .container{
   display: flex;
   justify-content: center;
