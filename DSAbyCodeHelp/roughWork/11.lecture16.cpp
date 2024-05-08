@@ -31,6 +31,7 @@ int main(){
     arr[i] = arr[smallIndex];
     arr[smallIndex] = tmp;
     i++;
+    print1DArray(arr, size);
   }
   
   print1DArray(arr, size);
