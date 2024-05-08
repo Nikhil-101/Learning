@@ -13,7 +13,8 @@ void print1DArray(int *arr, int size){
 }
 
 int main(){
-  int arr[] = {5, 2, 87, 0, 1};
+  // int arr[] = {5, 2, 87, 0, 1};
+  int arr[] = {6, 2, 8, 4, 10};
   int i = 0, j=0, size = sizeof(arr)/sizeof(int);
   while (i<size-1)
   {
