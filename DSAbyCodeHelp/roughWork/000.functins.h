@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 void print1DArray(int *arr, int size)
@@ -11,3 +12,9 @@ void print1DArray(int *arr, int size)
   return;
 }
 
+void print1DVector(vector<int>& v){
+  for (auto elem : v){
+    cout << elem << " ";
+  }
+  cout << endl;
+}
