@@ -12,6 +12,18 @@ void print1DArray(int *arr, int size)
   return;
 }
 
+void print2DArrayx3(int arr[][3], int rowSize, int colSize){
+  for (int i = 0; i < rowSize; i++)
+  {
+    for (int j = 0; j < colSize; j++)
+    {
+      cout<<arr[i][j]<<" ";
+    }
+    cout<<endl;
+  }
+  
+}
+
 void print1DVector(vector<int>& v){
   for (auto elem : v){
     cout << elem << " ";
