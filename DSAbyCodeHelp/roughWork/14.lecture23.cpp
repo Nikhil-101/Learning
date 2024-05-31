@@ -21,31 +21,81 @@ int main()
   // print2DArrayx3(arr, 3, 3);
   // cout<<"Highest Value of Sum of row is: "<<high<<endl;
 
-  vector<vector<int>> arr = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
-  int nRows = 3, mCols = 4;
-  vector<int> ans;
+  // Wave like Traversal
+  // vector<vector<int>> arr = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+  // int nRows = 3, mCols = 4;
+  // vector<int> ans;
 
-  for (int i = 0; i < mCols; i++)
+  // for (int i = 0; i < mCols; i++)
+  // {
+  //   if (i & 1)
+  //   {
+  //     for (int j = nRows - 1; j >= 0; j--)
+  //     {
+  //       cout << arr[j][i]<<" ";
+  //       ans.push_back(arr[j][i]);
+  //     }
+  //   }
+  //   else
+  //   {
+  //     for (int j = 0; j < nRows; j++)
+  //     {
+  //       cout << arr[j][i]<<" ";
+  //       ans.push_back(arr[j][i]);
+  //     }
+  //   }
+  // }
+
+  // print1DVector(ans);
+
+  // Spiral Traversal of Matrix
+  // vector<vector<int>> matrix = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
+  // vector<vector<int>> matrix = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+  vector<vector<int>> matrix = {{1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}, {11, 12, 13, 14, 15}, {16, 17, 18, 19, 20}, {21, 22, 23, 24, 25}};
+  int nRows=matrix.size(), nCols=matrix[0].size(), count=0, nElements=nRows*nCols;
+  cout<<nRows<<" "<<nCols<<endl;
+  int row = 0, col = 0;
+  while (count<nElements)
   {
-    if (i & 1)
+    // LR Traversal
+    for (; col < nCols; col++)
     {
-      for (int j = nRows - 1; j >= 0; j--)
-      {
-        cout << arr[j][i]<<" ";
-        ans.push_back(arr[j][i]);
-      }
+      cout << matrix[row][col] << " ";
+      count++;
     }
-    else
+    row++;
+    col--;
+    // UD Traversal
+    for (; row < nRows; row++)
     {
-      for (int j = 0; j < nRows; j++)
-      {
-        cout << arr[j][i]<<" ";
-        ans.push_back(arr[j][i]);
-      }
+      cout << matrix[row][col] << " ";
+      count++;
     }
+    col--;
+    row--;
+    // RL Traversal
+    int l = nCols % matrix[0].size();
+    for (; col >= l; col--)
+    {
+      cout << matrix[row][col] << " ";
+      count++;
+    }
+    col++;
+    row--;
+    // DU Traversal
+    l = nRows % matrix.size();
+    for (; row > l; row--)
+    {
+      cout << matrix[row][col] << " ";
+      count++;
+    }
+    row++;
+    col++;
+    nCols--;
+    nRows--;
   }
-
-  print1DVector(ans);
+  
+  
 
   return 0;
 }
