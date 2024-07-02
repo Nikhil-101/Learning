@@ -2,6 +2,13 @@
 #include<vector>
 using namespace std;
 
+void swap(int& a, int& b){
+  int tmp=a;
+  a=b;
+  b=tmp;
+  return;
+}
+
 void print1DArray(int *arr, int size)
 {
   for (int i = 0; i < size; i++)
