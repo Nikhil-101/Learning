@@ -1,0 +1,13 @@
+.script1.sh.swp
+.script5.sh.swp
+note1.txt
+note2.txt
+recall
+script1.sh
+script2.sh
+script3.sh
+script4.sh
+script5.sh
+stderr.txt
+stdout.txt
+tmp.txt
