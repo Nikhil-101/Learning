@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: rgb(64, 0, 124);
+      font-size: 62.5%;
+    }
+    .parent{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 50vh;
+      scale: 1.5;
+    }
+    .child1{
+      width: 40%;
+      height: 1rem;
+      background-color: blueviolet;
+    }
+    .child2{
+      display: flex;
+    }
+    .line{
+      width: .1rem;
+      height: 10rem;
+      background-color: blueviolet;
+    }
+
+    .lint-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      translate: 0 -.5rem;
+      transform-origin: top;
+    }
+
+    .lint-container-1{
+      animation: rotate-left;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+
+    .lint-container-2{
+      animation: rotate-right;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+
+    .circle{
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: blueviolet;
+      translate: 0 -.1rem;
+    }
+
+    @keyframes rotate-left{
+      0%{
+        rotate: 0deg;
+      }
+      25%{
+        rotate: 20deg;
+      }
+      50%{
+        rotate: 0deg;
+      }
+    }
+
+    @keyframes rotate-right{
+      50%{
+        rotate: 0deg;
+      }
+      75%{
+        rotate: -20deg;
+      }
+      100%{
+        rotate: 0deg;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child1"></div>
+    <div class="child2">
+      <div class="lint-container lint-container-1">
+        <div class="line"></div>
+        <div class="circle"></div>
+      </div>
+      
+      <div class="lint-container">
+        <div class="line"></div>
+        <div class="circle"></div>
+      </div>
+      <div class="lint-container">
+        <div class="line"></div>
+        <div class="circle"></div>
+      </div>
+      <div class="lint-container">
+        <div class="line"></div>
+        <div class="circle"></div>
+      </div>
+
+      <div class="lint-container lint-container-2">
+        <div class="line"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

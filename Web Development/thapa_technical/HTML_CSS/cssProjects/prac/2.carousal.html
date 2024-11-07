@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      font-size: 62.5%;
+    }
+    .img-container{
+      width: 900px;
+      aspect-ratio: 2;
+      /* background-color: aqua; */
+      border-radius: 1.1rem;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
+
+      animation-name: changeImg;
+      /* animation-timing-function: ease; */
+      animation-duration: 10s;
+      /* animation-direction: normal; */
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    @keyframes changeImg{
+      0%{
+        background-image: url(https://images.pexels.com/photos/18981044/pexels-photo-18981044/free-photo-of-a-forest-covered-in-fog-with-trees-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        
+      }
+      50%{
+        background-image: url(https://images.pexels.com/photos/15036815/pexels-photo-15036815/free-photo-of-a-sunset-over-the-water-with-a-church-in-the-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      }
+      100%{
+        background-image: url(https://images.pexels.com/photos/14760650/pexels-photo-14760650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      }
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="img-container">
+    
+  </div>
+</body>
+</html>
