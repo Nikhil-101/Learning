@@ -84,6 +84,129 @@ li {
   }
 }
 
+.flex{
+  display: flex;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
+.flex-center{
+  justify-content: center;
+  align-items: start;
+}
+
+.flex-center-center{
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-gap-1{
+  gap: .3rem;
+}
+
+.flex-gap-2{
+  gap: 1.8rem;
+}
+
+.flex-align-end{
+  align-items: end;
+}
+
+.grid{
+  display: grid;
+  padding: 10rem 0 0 0;
+}
+
+.grid-two{
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1%;
+}
+
+.grid-four{
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1%;
+  row-gap: 7rem;
+}
+
+.grid-two-nogap{
+  column-gap: 0;
+}
+
+.grid-flow--col{
+  grid-auto-flow: column;
+}
+
+.grid-row--three{
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-col--three{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-choose{
+  padding: 2rem 4rem;
+}
+
+.section-heading{
+  font-size: 3rem;
+}
+
+.section-para{
+  /* line-height: 2; */
+  /* letter-spacing: .1rem; */
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.card-center{
+  text-align: center;
+}
+
+.card{
+  padding: 3rem;
+}
+
+.card-img{
+  width: 7rem;
+  border-radius: 50%;
+  padding: 1.9rem;
+  background-color: lightblue;
+}
+
+.card-figcap{
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 2rem 0;
+}
+
+.colored-num{
+  font-size: 3rem;
+  padding: 1rem 1.7rem;
+  color: var(--main-color);
+  background-color: #bad1f6;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.card-heading{
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+.card-para{
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.grid-item--ralign{
+  text-align: right;
+}
+
 /* .btn:hover {
   background-color: var(--bnt-hover-bg-color);
   cursor: pointer;
@@ -93,7 +216,7 @@ li {
 /***** navbar Section *****/
 section,
 .container{
-  padding: 9.6rem 2.4rem;
+  padding: 9.6rem 9% 0 9%;
 }
 
 header{
@@ -221,7 +344,7 @@ main{
 /* ABOUT SECTION STARTS */
 
 .about-section{
-  padding: 9.6rem 15%;
+  /* padding: 9.6rem 15%; */
 
   & .container .about-texts .about-heading{
     font-size: 3rem;
@@ -229,20 +352,136 @@ main{
 
   & .container .about-cards{
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    /* display: flex; */
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10rem 0;
+    column-gap: 10%;
 
-    & .card figure{
-      & img{
-        width: 8rem;
-      }
+    & .card{
+      text-align: center;
 
-      & figcaption{
-        font-size: 2rem;
-        font-weight: 700;
-        text-transform: capitalize;
+      & figure{
+
+        & img{
+          width: 10rem;
+          /* background-image: var(lightblue); */
+          background-color: rgb(228, 248, 255);
+          border-radius: 50%;
+          padding: 1.5rem;
+          transition: all .2s;
+
+          &:hover{
+            rotate: 360deg;
+            background-color: var(--main-color);
+          }
+        }
+  
+        & figcaption{
+          font-size: 2rem;
+          font-weight: 700;
+          text-transform: capitalize;
+          padding: 2rem 0;
+        }
       }
     }
+  }
+}
 
+/* Course Section */
+
+.course-section .container .section-cards .card:hover{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px; transition: all .5s;
+}
+
+
+/* Choose Section */
+.choose-section .container .section-choose-content{
+  & .mobile-card-img{
+    grid-row: 1 / 4;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    position: relative;
+    
+    & .blue-circle{
+      width: 95%;
+      aspect-ratio: 1;
+      background-color: var(--main-color);
+      border-radius: 50%;
+      /* margin: 0 auto; */
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(3%, 50%);
+      box-shadow: var(--main-color) 0px 2px 4px 0px, var(--main-color) 0px 2px 16px 0px;
+
+    }
+
+    & img{
+      width: 80%;
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+
+.card-section .container
+{
+  /* background-color: #003b99; */
+
+  & .section-text{
+    padding: .8rem 3rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, transparent 0 0 0 0, rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background-color: white;
+  }
+
+  & .section-img
+  {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px, rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      0 0 0 0;
+    background-color: white;
+
+    & picture img{
+      width: 80%;
+    }
+  }
+}
+
+.card-section{
+  transform: translate(0rem, 10rem);
+  z-index: 2;
+}
+
+/* Footer Section */
+
+.section-footer{
+  background-color: black;
+  padding: 9rem 0 5rem 0;
+  & .container {
+    & .brand-social .social-btns a{
+      width: 4rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background-color: white;
+      & i{
+        color: var(--main-color);
+        font-size: 2.2rem;
+      }
+    }
+    & .courses h3,
+    & .links h3 {
+      color: white;
+      text-align: right;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.footer-para{
+  color: white;
+}
+
+.courses-links, .other-links{
+  & a{
+    color: white;
   }
 }
