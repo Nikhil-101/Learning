@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO LIST</title>
+</head>
+<body>
+  <div class="heading">
+    TODO List
+  </div>
+  <div class="interactive">
+    <input type="text" name="entry" id="input-entry">
+    <button>ADD</button>
+  </div>
+  <div class="display-list">
+
+  </div>
+
+  <script>
+    let select = path => document.querySelector(path);
+    let createEle = eleName => document.createElement(eleName);
+
+    let buttonPointer = select('button');
+    let inputPointer = select('#input-entry');
+    let appendPointer = select('.display-list');
+    // let clickTracer = select('')
+    
+    buttonPointer.addEventListener('click', () => {
+      let newEle = createEle('p');
+      newEle.innerText = inputPointer.value;
+      appendPointer.appendChild(newEle);
+
+      inputPointer.value='';
+    })
+// Delete entry by clicking on them
+    appendPointer.addEventListener('click', event => {
+      appendPointer.removeChild(event.target);
+    })
+    
+    
+  </script>
+</body>
+</html>
