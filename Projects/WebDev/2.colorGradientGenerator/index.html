@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient Generator</title>
+
+    <style>
+        body{
+            height: 100vh;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: inherit;
+        }
+        .btn-container{
+            margin: 0 0 2rem;
+            & .btn {
+                margin: 0 1.5rem 0;
+            }
+        }
+        .code-container{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .code-area{
+            width: 15rem;
+            height: 3rem;
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="btn-container">
+            <button class="btn btn1">btn1</button>
+            <button class="btn btn2">btn2</button>
+        </div>
+        <div class="code-container">
+            <button class="btn-copy">Copy your code here</button>
+            <textarea name="gradient-code" id="" class="code-area"></textarea>
+        </div>
+    </div>
+
+    <script>
+        console.log('started');
+        
+        let randomNum = () => {
+            return Math.floor(Math.random()*16);
+        }
+        let randomHEX = () =>{
+            let letters = '0123456789ABCDEF', num = 6;
+            let hexCode = '#';
+
+            while (num!=0) {
+                hexCode += letters.charAt(randomNum());
+                num--;
+            }
+            return hexCode;
+        }
+
+        let btn1Select = document.querySelector('.btn1');
+        let btn2Select = document.querySelector('.btn2');
+        let copySelect = document.querySelector('.btn-copy');
+        let textareaSelect = document.querySelector('.code-area');
+        let btn1Color=randomHEX();
+        let btn2Color=randomHEX();
+        btn1Select.innerText = btn1Color;
+        btn2Select.innerText = btn2Color;
+        document.body.style.backgroundImage = `linear-gradient(to right, ${btn1Color}, ${btn2Color})`;
+        // btn1Select.innerText = 'hello'
+        let str = `linear-gradient(to right, ${btn1Color}, ${btn2Color})`;
+        console.log(str);
+        
+        btn1Select.addEventListener('click', ()=> {
+            btn1Color = randomHEX()
+            btn1Select.innerText = btn1Color;
+            str = `linear-gradient(to right, ${btn1Color}, ${btn2Color})`;
+            document.body.style.backgroundImage = str;
+            textareaSelect.innerText = str;
+            console.log(str);
+        })
+        btn2Select.addEventListener('click', ()=> {
+            btn2Color = randomHEX()
+            btn2Select.innerText = btn2Color;
+            str = `linear-gradient(to right, ${btn1Color}, ${btn2Color})`;
+            document.body.style.backgroundImage = str;
+            textareaSelect.innerText = str;
+            console.log(str);
+        })
+        copySelect.addEventListener('click', ()=> {
+            navigator.clipboard.writeText(str);
+            alert('Text Copied');
+        })
+        console.log('ended');
+        
+        
+    </script>
+</body>
+</html>
