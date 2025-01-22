@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem
+}
+
+.container{
+    border: 1px solid black;
+    width: 40rem;
+    padding: 2rem;
+    border-radius: .3rem;
+}
+
+#input-field{
+    padding: .2rem;
+    border-radius: .3rem;
+}
+
+.main-body{
+    padding: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    /* border-collapse: collapse; */
+    border-spacing: .7rem;
+    width: 100%;
+}
+
+td{
+    border: 1px solid black;
+}

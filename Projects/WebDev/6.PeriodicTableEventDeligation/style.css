@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --element-num: 11;
+}
+
+.periodic-table{
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    justify-items: center;
+    margin: 100px;
+}
+
+.ptable-body{
+    display: grid;
+    grid-template-columns: repeat(var(--element-num), 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 25px;
+}
+
+.heading-text{
+    font-size: xx-large;
+}
+
+.element-div{
+    padding: 25px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.element-para{
+    font-size: x-large;
+}

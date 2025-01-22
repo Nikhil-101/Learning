@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <input
+          type="text"
+          name="cityName"
+          id="input-field"
+          placeholder="Search Your City..."
+        />
+      </div>
+      <div class="main-body">
+        <h1 class="city-name"></h1>
+        <p class="sync-time"></p>
+        <p class="weather-status"></p>
+        <img src="" alt="no-input" class="weather-img" />
+        <p class="current-temp"></p>
+        <span class="min-temp"></span>
+        <span class="max-temp"></span>
+      </div>
+      <div class="more-info">
+        <table>
+          <tr>
+            <td>
+              <div class="feel-img"></div>
+              <div class="feel-text">
+                <p>Feels Like</p>
+                <p class="feel-value"></p>
+              </div>
+            </td>
+            <td>
+              <div class="humid-img"></div>
+              <div class="humid-text">
+                <p>Humidity</p>
+                <p class="humid-value"></p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="wind-img"></div>
+              <div class="wind-text">
+                <p>Wind</p>
+                <p class="wind-value"></p>
+              </div>
+            </td>
+            <td>
+              <div class="pressure-img"></div>
+              <div class="pressure-text">
+                <p>Pressure</p>
+                <p class="pressure-value"></p>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

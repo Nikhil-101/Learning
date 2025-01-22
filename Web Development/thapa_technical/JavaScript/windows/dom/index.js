@@ -100,7 +100,7 @@
 
 //? Filtering Siblings:
 //? nextSibling / nextElementSibling
-//? previousSibling / previousElementSibling 
+//? previousSibling / previousElementSibling
 
 //? closest(selector):
 //? Find the closest ancestor that matches a given selector.
