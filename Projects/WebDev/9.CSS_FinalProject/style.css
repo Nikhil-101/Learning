@@ -5,6 +5,10 @@
     font-family: "Urbanist", sans-serif;
 }
 
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -387,10 +391,40 @@
 
 /* Footer Card Starts */
 
+.footer-card{
+    margin: 0 21%;
+    padding: 2rem 2rem 1rem;
+    border-radius: .7rem;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
+.footer-card-heading{
+    letter-spacing: .5px;
+}
+
+.footer-card-para{
+    margin-top: .3rem;
+    font-size: .9rem;
+    letter-spacing: .5px;
+    color: hsl(0, 0%, 30%);
+    padding: .2rem 0 1.2rem;
+}
+
+.footer-card-img img{
+    width: 25rem;
+}
 
 /* Footer Card Ends */
 
+/* Footer Starts */
+
+
+
+/* Footer Ends */
 
 
 .btn{
