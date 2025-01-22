@@ -275,6 +275,122 @@
 }
 /* Courses Section Ended */
 
+/* Choose Section Starts */
+
+.choose-section {
+    padding: 1rem 14% 5rem;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.choose-heading{
+    letter-spacing: .5px;
+}
+
+.choose-para{
+    margin-top: .3rem;
+    font-size: .9rem;
+    letter-spacing: .5px;
+    color: hsl(0, 0%, 5%);
+}
+
+.choose-section-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    margin: 7rem 0 2rem;
+    column-gap: 5rem;
+    /* position: relative; */
+}
+
+.card-num{
+    color: rgb(99, 99, 243);
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    background-color: rgb(232, 232, 246);
+    border-radius: 100%;
+}
+
+.card-heading{
+    letter-spacing: .5px;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+}
+
+.card-para{
+    /* margin-top: .3rem; */
+    font-size: .9rem;
+    letter-spacing: .5px;
+    color: hsl(0, 0%, 40%);
+}
+
+.choose-card:nth-child(1),
+.choose-card:nth-child(2),
+.choose-card:nth-child(3){
+    justify-items: end;
+}
+
+.choose-card:nth-child(1) .card-para,
+.choose-card:nth-child(2) .card-para,
+.choose-card:nth-child(3) .card-para{
+    text-align: right;
+}
+
+.choose-card:nth-child(5),
+.choose-card:nth-child(6),
+.choose-card:nth-child(7){
+    justify-items: start;
+}
+
+.img-container{
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    padding: 2.5rem 0;
+    position: relative;
+}
+
+.card-img{
+    height: 40rem;
+    transform: translateY(-1.5rem);
+    z-index: 2;
+    position: relative;
+}
+
+.blue-circle{
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: rgb(180, 180, 246);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 50%) scale(1.25);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.blue-circle::after{
+    content: '';
+    position: absolute;
+    /* background-color: red; */
+    border: 3px solid rgb(216, 216, 239);
+    top: 0;
+    left:-2px;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transform: scale(1.1);
+} 
+    
+/* Choose Section Ended */
+
+/* Footer Card Starts */
+
+
+
+/* Footer Card Ends */
+
 
 
 .btn{
