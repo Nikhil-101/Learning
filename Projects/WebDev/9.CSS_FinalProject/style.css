@@ -5,6 +5,15 @@
     font-family: "Urbanist", sans-serif;
 }
 
+.bg-color-white{
+    background-color: hsl(0, 0%, 90%);
+}
+
+.fa-brands{
+    padding: .4rem;
+    border-radius: 50%;
+}
+
 body{
     background-color: hsl(0, 0%, 95%);
 }
@@ -63,6 +72,8 @@ body{
     }
 }
 
+
+
 /* navbar ends */
 
 /* hero section starts */
@@ -109,7 +120,8 @@ body{
 }
 
 .hero-img img{
-    width: 30rem;
+    /* width: 30rem; */
+    width: 120%;
     transform: scaleX(-1);
 }
 
@@ -282,7 +294,7 @@ body{
 /* Choose Section Starts */
 
 .choose-section {
-    padding: 1rem 14% 5rem;
+    padding: 1rem 14% 0rem;
     background-color: hsl(0, 0%, 95%);
 }
 
@@ -356,7 +368,8 @@ body{
 }
 
 .card-img{
-    height: 40rem;
+    /* height: 40rem; */
+    width: 100%;
     transform: translateY(-1.5rem);
     z-index: 2;
     position: relative;
@@ -397,9 +410,12 @@ body{
     border-radius: .7rem;
     background-color: hsl(0, 0%, 95%);
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: translateY(8rem);
+    /* z-index: 3; */
 }
 
 .footer-card-heading{
@@ -414,15 +430,73 @@ body{
     padding: .2rem 0 1.2rem;
 }
 
-.footer-card-img img{
-    width: 25rem;
+.footer-card-img{
+    /* width: 25rem; */
+    width: 50%;
 }
 
 /* Footer Card Ends */
 
 /* Footer Starts */
 
+.footer-section{
+    display: flex;
+    padding: 12rem 14% 5rem;
+    background-color: black;
+    /* gap: 1rem; */
+}
 
+.about-brand{
+    width: 15rem;
+}
+
+.brand-name{
+    letter-spacing: .5px;
+    color: hsl(0, 0%, 95%);
+    font-weight: 400;
+    /* padding-bottom: 9rem; */
+}
+
+.brand-para{
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+    font-size: .9rem;
+    letter-spacing: .5px;
+    color: hsl(0, 0%, 75%);
+
+}
+
+.social-links{
+    display: flex;
+    flex-grow: 1;
+    gap: .8rem;
+    /* width: 5rem; */
+}
+
+.social-links i{
+    transition: all .3s;
+    font-size: 1.4rem;
+}
+
+.social-links i:hover{
+    background-color: black;
+    color: white;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    color: hsl(0, 0%, 95%);
+    align-items: end;
+    flex-grow: 1;
+    font-size: .9rem;
+    gap: .3rem;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: hsl(0, 0%, 80%);
+}
 
 /* Footer Ends */
 
@@ -458,3 +532,118 @@ body{
 .custom-shape-divider-bottom-1737545046 .shape-fill {
     fill: hsl(0, 0%, 95%);
 }
+
+
+/* Media Queries Starts */
+
+
+
+/* Media Queries Ends */
+
+
+
+/* Contact US Page Starts */
+
+.page-padding{
+    padding: 0 14%;
+}
+
+.header-section{
+    padding: 4rem 14%;
+}
+
+.section-para{
+    color: hsl(0, 0%, 20%);
+    font-size: .7rem;
+    letter-spacing: 1px;
+    padding-top: .2rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-direction-col{
+    flex-direction: column;
+}
+
+.flex-gap-2rem{
+    gap: 2rem;
+}
+
+.flex-gap-3rem{
+    gap: 3rem;
+}
+
+.flex-grow-1{
+    flex-grow: 1;
+}
+
+.justify-self-end{
+    justify-self: flex-end;
+}
+
+.justify-content-sb{
+    justify-content: space-between;
+}
+
+/* .req-data{
+    width: 200%;
+} */
+
+.position-rel{
+    position: relative;
+}
+
+.position-ab{
+    position: absolute;
+}
+
+.query-form{
+    width: 50%;
+}
+
+.req-data div{
+    width: 100%;
+}
+
+.form-btn{
+    margin-top: 1.2rem;
+}
+
+textarea{
+    height: 10rem;
+    padding: .7rem;
+    font-size: .9rem;
+    color: black;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-size: .8rem;
+}
+
+/* .flex-grow-dot3{
+    flex-grow: .3;
+} */
+
+label{
+    font-size: .85rem;
+    margin: 1.7rem 0 .3rem;
+    color: hsl(0, 0%, 40%);
+}
+
+input{
+    padding: .5rem;
+    font-size: .9rem;
+}
+
+input::placeholder{
+    font-size: .8rem;
+}
+
+/* iframe{
+    
+} */
+
+/* Contact US Page Ends */
