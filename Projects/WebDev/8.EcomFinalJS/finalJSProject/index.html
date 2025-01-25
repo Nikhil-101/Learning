@@ -1,13 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Header : head text, nav bar STARTS -->
+
+  <header class="header-tag">
+    <div class="container header-top black-bg white-txt flex flex-just-sb font-size">
+      <div class="header-text">
+        Free shipping, 30-day return or refund guarantee.
+      </div>
+      <div class="sign-btn-container flex flex-gap-1">
+        <a href="" class="login-btn">SIGN IN</a>
+        <a href="" class="login-btn">SIGN UP</a>
+      </div>
+    </div>
+
+    <div class="container nav navbar white-bg flex flex-align-c flex-just-sb">
+      <div class="brand-logo">
+        <img src="public/images/log.png" alt="brand-logo">
+      </div>
+
+      <div class="nav-btns">
+        <ul class="nav-list flex font-size flex-align-c flex-gap-1">
+          <li class="nav-link">
+            <a href="">home</a>
+          </li>
+          <li class="nav-link">
+            <a href="">about</a>
+          </li>
+          <li class="nav-link">
+            <a href="">products</a>
+          </li>
+          <li class="nav-link">
+            <a href="">contact</a>
+          </li>
+          <li class="nav-link">
+            <a href="">
+              <i class="fa-solid fa-cart-shopping cart-btn">&emsp;0</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Header : head text, nav bar ENDS -->
+
+
+  <script type="module" src="./src/main.js"></script>
+</body>
 </html>
