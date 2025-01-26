@@ -10,10 +10,11 @@
   --btn-black-color: hsl(0, 0%, 10%);
   --text-white-color: hsl(0, 0%, 85%);
   --anchor-color: #535bf2;
+  --hero-heading-color: #00056ca4;
 }
 
 .container{
-  padding: .8rem 17vw;
+  padding: .8rem 15vw;
 }
 
 .black-bg{
@@ -56,8 +57,28 @@
   gap: 1rem;
 }
 
+.place-it{
+  place-items: center;
+}
+
 .txt-deco-none{
   text-decoration: none;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+
+.section-para{
+  color: hsl(0, 0%, 95%);
+  line-height: 1.3rem;
+  letter-spacing: 1px;
+  font-size: .85rem;
 }
 
 
@@ -121,7 +142,7 @@ body{
   padding-right: 100%;
 }
 
-.cart-btn{
+.cart-btn, .btn{
   background-color: var(--btn-black-color);
   color: var(--bg-white-color);
   padding: .6rem 1.2rem;
@@ -130,9 +151,73 @@ body{
   transition: all .3s;
 }
 
-.cart-btn:hover{
+.cart-btn:hover, .btn:hover{
   background-color: var(--bg-white-color);
   color: var(--btn-black-color);
 }
 
 /* Navbar Ends */
+
+/* Hero Section Starts */
+
+.section-hero{
+  background-image: linear-gradient(45deg, var(--anchor-color), var(--bg-white-color));
+  position: relative;
+}
+
+.hero-content{
+  gap: 2.2rem;
+  height: 40rem;
+}
+
+.hero-txt{
+  gap: 1.5rem;
+}
+
+.hero-heading p, .hero-heading h1{
+  color: var(--hero-heading-color);
+}
+
+.hero-heading p{
+  font-size: .8rem;
+  font-weight: 550;
+}
+
+.hero-heading h1{
+  font-size: 2.7rem;
+}
+
+.hero-img img{
+  width: 33rem;
+  transform: scaleX(-1);
+}
+
+.hero-btn a:hover{
+  background-color: var(--anchor-color);
+  color: var(--text-white-color);
+}
+
+.custom-shape-divider-bottom-1737865781 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1737865781 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 120px;
+}
+
+.custom-shape-divider-bottom-1737865781 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+/* Hero Section Enss */
+
