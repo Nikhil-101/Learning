@@ -455,7 +455,103 @@ body{
 
 /* Footer Starts */
 
+.section-footer{
+  padding: 4rem 0 3rem;
+  background-color: var(--bg-black-color);
+}
+.section-footer *{
+  background-color: var(--bg-black-color);
+  color: hsl(0, 0%, 60%);
+}
 
+.footer-container{
+  grid-template-columns: 2fr repeat(3, 1fr);
+}
 
+.brand-footer img{
+  width: 8rem;
+}
+
+.footer-para{
+  font-size: .7rem;
+  letter-spacing: .3px;
+  padding: .9rem 0;
+}
+
+.links-heading{
+  font-size: .9rem;
+}
+
+.footer-container div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+
+  & a{
+    font-size: .8rem;
+    text-decoration: none;
+  }
+
+  & h4{
+    padding-bottom: .4rem;
+  }
+}
+
+.footer-container div:nth-child(3){
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+
+  & a{
+    font-size: .8rem;
+    text-decoration: none;
+  }
+
+  & h4{
+    padding-bottom: .4rem;
+  }
+}
+
+.footer-container div:nth-child(4){
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+
+  & p{
+    font-size: .8rem;
+    text-decoration: none;
+  }
+
+  & h4{
+    padding-bottom: .4rem;
+  }
+
+  /* & .input-newsletter{
+    flex-direction: row;
+  } */
+
+  & input{
+    /* align-self: flex-start; */
+    padding: .4rem .2rem;
+    outline: none;
+    background-color: hsl(0, 0%, 12%);
+    width: 100%;
+    font-size: .9rem;
+    &:focus{
+      background-color: hsl(0, 0%, 9%);
+      
+    }
+  }
+  
+  & button{
+    align-self: end;
+    padding: .4rem .2rem;
+    border-radius: .2rem;
+    
+    &:hover{
+      background-color: hsl(0, 0%, 9%);
+    }
+  }
+}
 /* Footer Ends */
 
