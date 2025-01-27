@@ -306,7 +306,7 @@ body{
 /* Policy Starts */
 
 .policy{
-  margin: 1rem 0;
+  margin: 0rem 0 2rem 0;
 }
 
 .policy-box{
@@ -337,3 +337,125 @@ body{
 /* Policy Ends */
 
 /* Policy and Offer Section Ends */
+
+/* Store Items Starts */
+/* Store Items Ends */
+
+/* Choose Section Starts */
+
+.section-choose-content{
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+    "box1 img box4"
+    "box2 img box5"
+    "box3 img box6";
+  row-gap: 1rem;
+  column-gap: 2rem;
+}
+
+.section-head-content{
+  margin-bottom: 4rem;
+}
+
+.choose-para{
+  font-size: .9rem;
+  color: hsl(0, 0%, 40%);
+  margin-top: .3rem;
+}
+
+.content-box:nth-child(1){
+  grid-area: box1;
+  text-align: right;
+  justify-items: end;
+}
+.content-box:nth-child(2){
+  grid-area: box2;
+  text-align: right;
+  justify-items: end;
+}
+.content-box:nth-child(3){
+  grid-area: box3;
+  text-align: right;
+  justify-items: end;
+}
+.content-box:nth-child(5){
+  grid-area: box4;
+  text-align: left;
+  justify-items: start;
+}
+.content-box:nth-child(6){
+  grid-area: box5;
+  text-align: left;
+  justify-items: start;
+}
+.content-box:nth-child(7){
+  grid-area: box6;
+  text-align: left;
+  justify-items: start;
+}
+
+.box-num{
+  color: #868bee;
+  padding: .8rem 1.2rem;
+  font-size: 1.5rem;
+  position: relative;
+  background-color: #e4e4ee;
+  border-radius: 50%;
+}
+
+/* .box-num::before{
+  content: '';
+  position: absolute;
+  width: 2rem;
+  aspect-ratio: 1;
+} */
+
+.content-img{
+  grid-area: img;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+}
+
+.img-box img{
+  width: 15rem;
+  /* z-index: 10; */
+}
+
+.img-circle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 19rem;
+  aspect-ratio: 1;
+  background-color: #e5e5ee;
+  border-radius: 50%;
+  z-index: -1;
+  animation: blink 4s ease-in-out alternate infinite;
+}
+
+@keyframes blink{
+  to{
+    background-color: #9297f3;
+  }
+}
+
+.box-heading{
+  margin: .5rem 0 .8rem 0;
+  color: hsl(0, 0%, 30%);
+}
+
+.box-para{
+  font-size: .85rem;
+  color: hsl(0, 0%, 30%);
+}
+
+/* Choose Section Ends */
+
+/* Footer Starts */
+
+
+
+/* Footer Ends */
+
