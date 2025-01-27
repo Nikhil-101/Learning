@@ -6,7 +6,7 @@
 
 :root{
   --bg-black-color: hsl(0, 0%, 15%);
-  --bg-white-color: #f7f7f7;
+  --bg-white-color: #F9F6EE;
   --btn-black-color: hsl(0, 0%, 10%);
   --text-white-color: hsl(0, 0%, 85%);
   --anchor-color: #535bf2;
@@ -45,7 +45,7 @@
   justify-content: space-between;
 }
 
-.flex-just-c{
+.just-cent{
   justify-content: center;
 }
 
@@ -73,7 +73,6 @@
   text-transform: uppercase;
 }
 
-
 .section-para{
   color: hsl(0, 0%, 95%);
   line-height: 1.3rem;
@@ -81,11 +80,35 @@
   font-size: .85rem;
 }
 
+.grid{
+  display: grid;
+}
+
+.grid-col-2{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-3{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-col-4{
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.relative{
+  position: relative;
+}
+
+.absolute{
+  position: absolute;
+}
 
 /* CUSTOM ELEMENT PROPERTIES */
 
 body{
   font-family: "Urbanist", sans-serif;
+  background-color: var(--bg-white-color)
 }
 
 /* Header Top Starts */
@@ -215,9 +238,102 @@ body{
 }
 
 .custom-shape-divider-bottom-1737865781 .shape-fill {
-  fill: #FFFFFF;
+  fill: var(--bg-white-color);
 }
 
+/* Hero Section Ends */
 
-/* Hero Section Enss */
+/* Policy and Offer Section Starts */
 
+.ad-content{
+  padding: 1.2rem .8rem;
+  background-color: #FAF9F6;
+}
+
+.ad-content::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0rem;
+  border: 3.3rem solid #D3D3D3;
+  border-radius: 100% 0 0 0%;
+  height: 0rem;
+  z-index: 0;
+}
+
+.ad-top-txt{
+  font-size: .6rem;
+  font-weight: 550;
+  color: hsl(0, 0%, 50%);
+}
+
+.ad-heading{
+  font-size: 1.1rem;
+  color: hsl(0, 0%, 30%);
+  margin: .2rem 0 .5rem;
+}
+
+.ad-btn{
+  font-size: .8rem;
+  text-underline-offset: .2rem;
+}
+
+.ad-img{
+  z-index: 10;
+}
+
+.ad-img img{
+  width: 9rem;
+  /* z-index: 10; */
+}
+
+.ad-content:nth-child(1) .ad-img img{
+  width: 10rem;
+  transform: translateY(.5rem);
+}
+
+.ad-content:nth-child(2) .ad-img img{
+  width: 8rem;
+  transform: translateX(1.3rem);
+}
+
+.ad-content:nth-child(3) .ad-img img{
+  width: 8rem;
+  transform: rotate(5deg) translateX(1.3rem);
+}
+
+/* Policy Starts */
+
+.policy{
+  margin: 1rem 0;
+}
+
+.policy-box{
+  gap: 1.2rem;
+  padding: 2rem 1rem;
+  background-color: #FAF9F6;
+}
+
+.policy-img i{
+  font-size: 1.4rem;
+  color: var(--anchor-color);
+}
+
+.policy-heading{
+  font-weight: 500;
+  font-size: .8rem;
+  color: var(--bg-black-color);
+  letter-spacing: .3px;
+}
+
+.policy-para{
+  font-size: .6rem;
+  color: hsl(0, 0%, 50%);
+  margin-top: .2rem;
+  letter-spacing: .5px;
+}
+
+/* Policy Ends */
+
+/* Policy and Offer Section Ends */
