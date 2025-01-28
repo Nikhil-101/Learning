@@ -339,6 +339,74 @@ body{
 /* Policy and Offer Section Ends */
 
 /* Store Items Starts */
+
+.section-product{
+  padding: 3rem 0 7rem 0;
+}
+
+.section-txt{
+  margin-bottom: 3rem;
+}
+
+.selling-product-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  justify-items: center;
+}
+
+.product-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .6rem;
+  padding: 1rem;
+  border: 1px solid hsl(0, 0%, 50%);
+  width: 18rem;
+  /* height: 35rem; */
+  border-radius: 10px;
+}
+
+.product-box .product-img{
+  height: 12rem;
+}
+
+.rating-box{
+  font-size: .6rem;
+}
+
+.price-box{
+  display: flex;
+  gap: 1.5rem;
+  /* justify-content: flex-start; */
+  font-size: 1.2rem;
+  align-self: flex-start;
+}
+
+.actual-price{
+  text-decoration: line-through;
+}
+
+.stocks-box{
+  align-self: flex-start;
+  display: flex;
+  gap: 1rem;
+}
+
+.quantity-txt{
+  padding-right: .8rem;
+}
+
+.product-box .inc-dec-btn{
+  align-self: flex-start;
+}
+
+.inc-dec-btn :is(.inc-btn, .dec-btn, .product-quantity){
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+}
+
+
 /* Store Items Ends */
 
 /* Choose Section Starts */
@@ -491,6 +559,10 @@ body{
   & a{
     font-size: .8rem;
     text-decoration: none;
+
+    & :hover {
+        color: hsl(0, 0%, 80%);
+      }
   }
 
   & h4{
@@ -506,6 +578,10 @@ body{
   & a{
     font-size: .8rem;
     text-decoration: none;
+
+    & :hover{
+      color: hsl(0, 0%, 80%);
+    }
   }
 
   & h4{
@@ -554,6 +630,9 @@ body{
     }
   }
 }
+
+
+
 /* Footer Ends */
 
 
@@ -592,6 +671,22 @@ body{
 
   .ad-content{
     width: 20rem;
+  }
+
+  .section-contact .section-content{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  .input-form{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-contact .map-location iframe{
+    width: 100%;
+    /* height: 100%; */
   }
 }
 
