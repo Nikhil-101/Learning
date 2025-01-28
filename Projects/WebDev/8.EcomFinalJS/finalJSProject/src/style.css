@@ -591,6 +591,10 @@ body{
   padding: .3rem .3rem;
   font-size: 1.1rem;
   margin-bottom: 1.2rem;
+  
+  &::placeholder{
+    font-size: 1rem;
+  }
 }
 
 .form-btn{
@@ -600,3 +604,82 @@ body{
 
 
 /* Contact Us Page Ends */
+
+
+/* Cart Page Starts */
+
+.section-cart{
+  min-height: 60vh;
+  margin-top: 3rem;
+}
+
+.product-data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 5rem; */
+  border: 1px solid hsl(0, 0%, 80%);
+  padding: .5rem 1rem;
+}
+
+.product-name{
+  font-weight: 700;
+  justify-self: start;
+}
+
+.product-price{
+  color: hsl(0, 0%, 20%);
+  font-weight: 100;
+}
+
+.inc-dec-btn{
+  display: flex;
+  align-items: center;
+}
+
+.inc-btn, .dec-btn, .product-quantity{
+  padding: .4rem 1.8rem;
+  border: .1px solid hsl(0, 0%, 80%);
+  text-decoration: none;
+  align-self: center;
+  font-size: .8rem;
+}
+
+.inc-btn{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-right: transparent;
+}
+
+.dec-btn{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-left: transparent;
+}
+
+.remove-product{
+  text-decoration: none;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+/* .product-quantity{
+  font-size: .8rem;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+} */
+
+.product-img{
+  height: 5rem;
+}
+
+.product-category{
+  font-size: .7rem;
+  letter-spacing: .2px;
+  background-color: #bec0e6;
+  padding: .2rem .5rem;
+  border-radius: 50px;
+}
+
+
+/* Cart Page Ends */

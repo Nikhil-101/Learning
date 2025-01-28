@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header : head text, nav bar STARTS -->
+
+    <header class="header-tag">
+      <div
+        class="container header-top black-bg white-txt flex flex-just-sb font-size"
+      >
+        <div class="header-text">
+          Free shipping, 30-day return or refund guarantee.
+        </div>
+        <div class="sign-btn-container flex flex-gap-1">
+          <a href="" class="login-btn">SIGN IN</a>
+          <a href="" class="login-btn">SIGN UP</a>
+        </div>
+      </div>
+
+      <div class="container nav navbar white-bg flex flex-align-c flex-just-sb">
+        <div class="brand-logo">
+          <img src="../public/images/log.png" alt="brand-logo" />
+        </div>
+
+        <div class="nav-btns">
+          <ul class="nav-list flex font-size flex-align-c flex-gap-1">
+            <li class="nav-link">
+              <a href="../index.html">home</a>
+            </li>
+            <li class="nav-link">
+              <a href="">about</a>
+            </li>
+            <li class="nav-link">
+              <a href="">products</a>
+            </li>
+            <li class="nav-link">
+              <a href="contact.html">contact</a>
+            </li>
+            <li class="nav-link">
+              <a href="shoppingCart.html">
+                <i class="fa-solid fa-cart-shopping cart-btn">&emsp;0</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Header : head text, nav bar ENDS -->
+
+    <!-- Product List Starts -->
+
+    <section class="section-cart container">
+      <div class="product-list">
+        <div class="product-data">
+          <p class="product-category">Mobiles</p>
+          <img src="../public/images/iphone.png" alt="mobile-pic" class="product-img"/>
+          <p class="product-name">Smartphone</p>
+          <p class="product-price">₹999</p>
+          <div class="inc-dec-btn">
+            <a href="" class="inc-btn">+</a>
+            <p class="product-quantity">1</p>
+            <a href="" class="dec-btn">-</a>
+          </div>
+          <a href="" class="btn remove-product">Remove</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product List Ends -->
+
+    <!-- Footer Starts -->
+
+    <footer class="section-footer">
+      <div class="footer-container container grid">
+        <div class="brand-footer">
+          <img src="../public/images/logo.png" alt="" />
+          <p class="footer-para">
+            Welcome to Thapa EcomStore, your ultimate destination for
+            cutting-edge gadgets!
+          </p>
+          <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" />
+        </div>
+
+        <div class="shopping-links">
+          <h4 class="links-heading">SHOPPING</h4>
+          <a href="">Computer Store</a><a href="">Laptop Store</a
+          ><a href="">Accessories</a><a href="">Sales & Discount</a>
+        </div>
+
+        <div class="experiance-links">
+          <h4 class="links-heading">EXPERIENCE</h4>
+          <a href="">Contact US</a><a href="">Payment Method</a
+          ><a href="">Delivery</a><a href="">Return & Exchange</a>
+        </div>
+
+        <div class="newsletter-links">
+          <h4 class="links-heading">NEWSLETTER</h4>
+          <p>Be the first to know about new arrivals, sales & promos!</p>
+          <div class="input-newsletter">
+            <input
+              type="tel"
+              name="email.news"
+              id=""
+              placeholder="Your Email"
+            />
+            <button>SUBMIT</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer Ends -->
+
+    <script type="module" src="../src/main.js"></script>
+  </body>
+</html>
