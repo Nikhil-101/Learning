@@ -62,23 +62,52 @@
     <!-- Product List Starts -->
 
     <section class="section-cart container">
-      <div class="product-list">
-        <div class="product-data">
-          <p class="product-category">Mobiles</p>
-          <img src="../public/images/iphone.png" alt="mobile-pic" class="product-img"/>
-          <p class="product-name">Smartphone</p>
-          <p class="product-price">₹999</p>
-          <div class="inc-dec-btn">
-            <a href="" class="inc-btn">+</a>
-            <p class="product-quantity">1</p>
-            <a href="" class="dec-btn">-</a>
-          </div>
-          <a href="" class="btn remove-product">Remove</a>
+      <div class="product-list"></div>
+    </section>
+
+    <!-- Product List Ends -->
+
+    <!-- Template: Product Box Starts -->
+
+    <template class="template-box">
+      <div class="product-data">
+        <p class="product-category"></p>
+        <img src="" alt="" class="product-img" />
+        <p class="product-name"></p>
+        <p class="product-price"></p>
+        <div class="inc-dec-btn">
+          <a href="" class="inc-btn">+</a>
+          <p class="product-quantity"></p>
+          <a href="" class="dec-btn">-</a>
+        </div>
+        <a href="" class="btn remove-product">Remove</a>
+      </div>
+    </template>
+
+    <!-- Template: Product Box Ends -->
+
+    <!-- Total Payable Amount Section Starts -->
+
+    <section class="section-amount container">
+      <div class="bill-section">
+        <p class="section-head">Selected Offer Summary</p>
+        <div class="sub-total-div">
+          <p>Sub Total</p>
+          <p class="sub-total-num"></p>
+        </div>
+        <div class="tax-div">
+          <p>Tax</p>
+          <p class="tax-num"></p>
+        </div>
+        <hr />
+        <div class="final-total-div">
+          <p>Final Total</p>
+          <p class="bill-total"></p>
         </div>
       </div>
     </section>
 
-    <!-- Product List Ends -->
+    <!-- Total Payable Amount Section Ends -->
 
     <!-- Footer Starts -->
 
@@ -123,6 +152,6 @@
 
     <!-- Footer Ends -->
 
-    <script type="module" src="../src/main.js"></script>
+    <script type="module" src="../src/shoppingCart.js"></script>
   </body>
 </html>

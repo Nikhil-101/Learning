@@ -406,6 +406,10 @@ body{
   padding-right: 1.3rem;
 }
 
+.add-cart-btn{
+  text-decoration: none;
+}
+
 
 /* Store Items Ends */
 
@@ -559,8 +563,9 @@ body{
   & a{
     font-size: .8rem;
     text-decoration: none;
+    align-self: flex-start;
 
-    & :hover {
+    &:hover {
         color: hsl(0, 0%, 80%);
       }
   }
@@ -578,10 +583,11 @@ body{
   & a{
     font-size: .8rem;
     text-decoration: none;
+    align-self: flex-start;
 
-    & :hover{
-      color: hsl(0, 0%, 80%);
-    }
+    &:hover {
+        color: hsl(0, 0%, 80%);
+      }
   }
 
   & h4{
@@ -919,6 +925,37 @@ body{
   padding: .2rem .5rem;
   border-radius: 50px;
 }
+
+.section-amount{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.bill-section{
+  border: 2px solid black;
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 1rem;
+  width: 17rem;
+}
+
+.bill-section div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-total-div p:first-child{
+  color: hsl(0, 0%, 50%);
+}
+.tax-div p:first-child{
+  color: hsl(0, 0%, 50%);
+}
+.final-total-div p:first-child{
+  color: hsl(0, 0%, 50%);
+}
+
+
 
 
 /* Cart Page Ends */
