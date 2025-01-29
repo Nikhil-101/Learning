@@ -954,8 +954,14 @@ body{
 .final-total-div p:first-child{
   color: hsl(0, 0%, 50%);
 }
-
-
-
-
 /* Cart Page Ends */
+
+
+.toast-notification{
+  background-color: hsl(0, 0%, 30%);
+  color: hsl(0, 0%, 90%);
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: .4rem 1rem;
+}

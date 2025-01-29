@@ -9,6 +9,7 @@ export const findData = (id, data) =>{
   // returns false if product not found
   if (!found) {
     index = false;
+    return false;
   }
 
   // return index of the matched product

@@ -3,11 +3,16 @@ import products from "../api/products.json";
 import { incDecFun } from './incDec';
 import { addToCart } from './addToCart';
 import { updateCartIcon } from './updateCartIcon';
+import { showToast } from './showToast';
 
 // load necessary references
 const productListRef = document.querySelector('.selling-product-list');
 const templateRef = document.getElementById("template-product");
 const cartBtn = document.querySelector('.cart-btn');
+
+
+const toastTemplateRef = document.querySelector('.toast-template');
+
 
 products.forEach((product)=>{
   // dynamically cards are created
@@ -46,6 +51,7 @@ products.forEach((product)=>{
   addCartBtnRef.addEventListener('click', (event)=>{
     event.preventDefault();
     addToCart(event, product.id);
+    showToast(document.body, toastTemplateRef);
     updateCartIcon(cartBtn);
   })
 

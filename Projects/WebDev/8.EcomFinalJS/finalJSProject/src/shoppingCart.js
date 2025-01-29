@@ -7,6 +7,7 @@ import { incDecFun } from './incDec';
 import { cartPriceUpdate } from './CartPriceUpdate';
 import { deleteLocalData } from './deleteLocalData';
 import { cartBill } from './cartBill';
+import { showToast } from './showToast';
 
 // load necessary references
 const cartListRef = document.querySelector('.product-list');
@@ -16,6 +17,7 @@ const cartSubTotal = document.querySelector('.sub-total-num');
 const cartTax = document.querySelector('.tax-num');
 const cartTotal = document.querySelector('.bill-total');
 let localData = getLocalData();
+const toastTemplateRef = document.querySelector('.toast-template');
 
 // load all cart Products from localStorage
 localData.forEach((product, lindex) => {
@@ -49,11 +51,9 @@ localData.forEach((product, lindex) => {
 
   removeBtnRef.addEventListener('click', (event)=>{
     event.preventDefault();
+    showToast(document.body, toastTemplateRef);
     event.target.parentNode.remove();
-    // deleteLocalData(lindex);
     deleteLocalData(product.id);
-    console.log(event.target.parentNode);
-    
     updateCartIcon(cartBtn);
     cartBill(cartSubTotal, cartTax, cartTotal);
   })

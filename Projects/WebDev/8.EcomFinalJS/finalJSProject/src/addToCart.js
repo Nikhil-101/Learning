@@ -16,7 +16,7 @@ export const addToCart = (event, id) =>{
   let productFound = findData(id, localData)
 
   // if found increment local storage by user quantity
-  if (productFound) {
+  if (productFound!==false) {
     localData.at(productFound).productQuantity += quantityNum;
   }
 
