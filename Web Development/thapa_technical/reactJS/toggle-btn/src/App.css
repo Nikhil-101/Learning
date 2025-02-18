@@ -1,0 +1,50 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.btn{
+  width: 7rem;
+  height: 3rem;
+  border-radius: 100rem;
+  display: flex;
+  align-items: center;
+}
+
+.btn-green{
+  transition: background-color .5s;
+  background-color: rgb(113, 172, 24);
+}
+
+.btn-red{
+  transition: background-color .5s;
+  background-color: brown;
+}
+
+.circle{
+  width: 2.3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.circle-red{
+  transition: transform .5s;
+  transform: translateX(.5rem);
+  background-color: red;
+}
+
+.circle-green{
+  transition: transform .5s;
+  transform: translateX(4.2rem);
+  background-color: green;
+}
+
+p{
+  margin: 0;
+}
