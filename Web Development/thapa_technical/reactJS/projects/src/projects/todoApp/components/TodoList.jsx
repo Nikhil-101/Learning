@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import { FaCheckCircle, FaTrash } from "react-icons/fa";
+import { ImRadioUnchecked } from "react-icons/im";
 
 import styles from './TodoList.module.css'
 
-// import buttons from "./Button.module.css";
+export const TodoList = ({ data, handleDeleteTaskBtn, handleCheckBtn }) => {
 
-export const TodoList = ({ data, handleDeleteTaskBtn }) => {
   return (
     <>
       <ul className={styles["ul-list"]}>
@@ -13,12 +13,12 @@ export const TodoList = ({ data, handleDeleteTaskBtn }) => {
           data.map((task, index)=>(
             <li className={styles["li-list"]} key={index}>
 
-              <span>{task}</span>
+              <span className={task.checked ? styles['task-text'] : ''}>{task.content}</span>
 
               <div className={styles["btn-container"]}>
 
-                <button className={styles["check-btn"]}>
-                  <FaCheckCircle />
+                <button className={styles["check-btn"]} onClick={() => handleCheckBtn(task)}>
+                  {task.checked ? <FaCheckCircle /> : <ImRadioUnchecked />}
                 </button>
 
                 <button className={styles["del-btn"]} onClick={() => handleDeleteTaskBtn(task)}>

@@ -9,43 +9,90 @@ import { TodoHeading } from './projects/todoApp/components/TodoHeading.jsx'
 import { TodoList } from './projects/todoApp/components/TodoList.jsx'
 import { DeleteAllBtn } from './projects/todoApp/components/DeleteAllBtn.jsx'
 
+let localData;
+
+const loadLocalData = () => {
+  // setData(JSON.parse(localStorage.getItem('todoData')));
+  localData = JSON.parse(localStorage.getItem('todoData'));
+  localData = localData || []
+}
+
+loadLocalData();
+  
 export const App = () => {
-  const [inputValue, setInputValue] = useState("");
-  const [data, setData] = useState([
-    "Buy Rice",
-    "Get a Job",
-  ]);
+  const [inputValue, setInputValue] = useState({
+    id: '',
+    content: '',
+    checked: false,
+  });
+
+  const [data, setData] = useState(localData);
+
+  const storeLocalData = () => {
+    localStorage.setItem('todoData', JSON.stringify(data));
+    return;
+  }
 
   const handleInputValue = (value) => {
-    setInputValue(value);
+    setInputValue({id: value, content: value, checked: false});
+    return;
   }
 
   const checkDuplicate = (value) => {
-    return data.includes(value)
+    const booleanValue = data.find((elem) => {
+      return elem.content === value;
+    })
+    if(booleanValue) return true;
+    return false;
   }
   
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    if(!inputValue || checkDuplicate(inputValue)){
-      setInputValue("")
+    if(!inputValue.content || checkDuplicate(inputValue.content)){
+      setInputValue({
+        id: '',
+        content: '',
+        checked: false,
+      })
       return;
     }
 
     setData((prev)=> [...prev, inputValue])
-    setInputValue("")
+    
+    setInputValue({
+      id: '',
+      content: '',
+      checked: false,
+    })
   }
 
-  const handleDeleteTaskBtn = (val) => {
+  const handleDeleteTaskBtn = (value) => {
     const newData = data.filter((task)=>{
-      return task != val;
+      return task.content != value.content;
     })
     setData(newData);
+    return;
   }
 
   const handleAllDeleteBtn = () => {
     setData([]);
+    return;
   }
+
+  const handleCheckBtn = (value) => {
+    const newData = data.map((obj)=>{
+      if(obj.content === value.content)
+      {
+        obj.checked = !obj.checked;
+      }
+      return obj;
+    })
+    setData(newData);
+    return;
+  }
+
+  
 
   return (
     <>
@@ -58,9 +105,10 @@ export const App = () => {
         <InputForm handleInputValue={handleInputValue} inputValue={inputValue} handleFormSubmit={handleFormSubmit} />
       </section>
       <section className="display-list">
-        <TodoList data={data} handleDeleteTaskBtn={handleDeleteTaskBtn} />
+        <TodoList data={data} handleDeleteTaskBtn={handleDeleteTaskBtn} handleCheckBtn={handleCheckBtn} />
       </section>
       <DeleteAllBtn handleAllDeleteBtn={handleAllDeleteBtn} />
+      {storeLocalData(data)}
     </>
   )
 }

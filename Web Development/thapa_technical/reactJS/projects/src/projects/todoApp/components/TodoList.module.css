@@ -37,3 +37,7 @@
   cursor: pointer;
   transform: translateY(.15rem);
 }
+
+.task-text{
+  text-decoration: line-through;
+}
