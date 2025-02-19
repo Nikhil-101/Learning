@@ -8,15 +8,15 @@ function App() {
   }
 
   function textSelect(){
-    return status > 0 ? "ON" : "OFF";
+    return status ? "ON" : "OFF";
   }
 
   function btnColor(){
-    return status > 0 ? "btn btn-green" : "btn btn-red";
+    return status ? "btn btn-green" : "btn btn-red";
   }
   
   function circleColor(){
-    return status > 0 ? "circle circle-green" : "circle circle-red";
+    return status ? "circle circle-green" : "circle circle-red";
   }
 
   return (
