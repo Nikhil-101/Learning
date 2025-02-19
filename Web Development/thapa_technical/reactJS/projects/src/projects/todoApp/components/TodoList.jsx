@@ -1,23 +1,31 @@
 /* eslint-disable react/prop-types */
 import { FaCheckCircle, FaTrash } from "react-icons/fa";
 
-export const TodoList = ({ data }) => {
+import styles from './TodoList.module.css'
+
+// import buttons from "./Button.module.css";
+
+export const TodoList = ({ data, handleDeleteTaskBtn }) => {
   return (
     <>
-      <ul>
+      <ul className={styles["ul-list"]}>
         {
           data.map((task, index)=>(
-            <li key={index}>
-              
+            <li className={styles["li-list"]} key={index}>
+
               <span>{task}</span>
 
-              <button className="check-btn">
-                <FaCheckCircle />
-              </button>
+              <div className={styles["btn-container"]}>
 
-              <button className="delete-btn">
-                <FaTrash />
-              </button>
+                <button className={styles["check-btn"]}>
+                  <FaCheckCircle />
+                </button>
+
+                <button className={styles["del-btn"]} onClick={() => handleDeleteTaskBtn(task)}>
+                  <FaTrash />
+                </button>
+
+              </div>
 
             </li>
           ))

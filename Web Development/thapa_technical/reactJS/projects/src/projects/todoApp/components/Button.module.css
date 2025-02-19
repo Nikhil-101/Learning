@@ -1,0 +1,17 @@
+.btn{
+  color: white;
+  padding: .6rem 1.2rem;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  outline: none;
+  transition: border-color .25s;
+
+  &:hover{
+    border-color: rgb(230, 219, 6);
+  }
+  
+  &:active{
+    border-color: white;
+  }
+}

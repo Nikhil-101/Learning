@@ -1,0 +1,16 @@
+.input-txt{
+  width: 14rem;
+  height: 2.4rem;
+  border: 2px solid transparent;
+  border-radius: 15px 0 0 15px;
+  outline: none;
+  padding-left: .7rem;
+  letter-spacing: .5px;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+
+  &:focus{
+    outline: 2px solid whitesmoke;
+  }
+}

@@ -1,3 +1,10 @@
+import buttons from "./Button.module.css";
+import styles from "./AddTaskBtn.module.css";
+
 export const AddTaskBtn = () => {
-  return <button type="submit">Add Task</button>
-}
+  return (
+    <button className={`${buttons.btn} ${styles["add-btn"]}`} type="submit">
+      Add Task
+    </button>
+  );
+};

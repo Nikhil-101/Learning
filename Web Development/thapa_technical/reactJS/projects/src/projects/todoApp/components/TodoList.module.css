@@ -1,0 +1,39 @@
+.ul-list{
+  list-style: none;
+}
+
+.li-list{
+  background-color: whitesmoke;
+  color: rgb(51, 51, 51);
+  font-size: 1.1rem;
+  padding: .9rem 1.2rem;
+  border-radius: 50px;
+  margin: .7rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-container{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.check-btn{
+  color: green;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transform: translateY(.15rem);
+}
+
+.del-btn{
+  color: rgb(224, 101, 67);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transform: translateY(.15rem);
+}
