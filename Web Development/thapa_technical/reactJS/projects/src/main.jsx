@@ -5,7 +5,8 @@ import { createRoot } from 'react-dom/client'
 // useState Challange
 // import { App } from './projects/useStateChallange/App'
 // useEffect Challange
-import { App } from './projects/useEffectChallange/App'
+// import { App } from './projects/useEffectChallange/App'
+import { App } from './projects/pokemonApiPrac/App'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
