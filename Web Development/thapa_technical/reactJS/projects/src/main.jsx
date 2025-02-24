@@ -8,7 +8,9 @@ import { createRoot } from 'react-dom/client'
 // import { App } from './projects/useEffectChallange/App'
 // Fetch API Practice
 // import { App } from './projects/pokemonApiPrac/App'
-import { App } from './projects/pokemonAPIChallange/App'
+// Pokemon API Challange
+// import { App } from './projects/pokemonAPIChallange/App'
+import { App } from './projects/tmp/App'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
