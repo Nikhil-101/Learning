@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="todo-input-container">
+      <h2>TODO App</h2>
+      <input
+        type="text"
+        name="task-heading"
+        id="task-heading"
+        placeholder="Heading"
+      />
+      <input type="text" name="task-body" id="task-body" placeholder="Body" />
+      <button class="submit-btn">Add</button>
+    </form>
+
+    <div class="todo-task-display"></div>
+    <script>
+      const formElementRef = document.querySelector(".todo-input-container");
+      formElementRef.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const formData = new FormData(formElementRef);
+        console.log(formData.get("task-heading"));
+        console.log(formData.get("task-body"));
+      });
+    </script>
+  </body>
+</html>

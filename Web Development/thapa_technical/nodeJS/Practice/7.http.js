@@ -1,4 +1,5 @@
-const http = require('http');
+// const http = require('http');
+import http from 'http'
 
 const PORT = '3000'
 
@@ -9,9 +10,10 @@ const server = http.createServer((req, res)=>{
     // To show what type of data is send (html or plain or others)
     res.setHeader('Content-Type', 'text/html')
     // store data to send in writable
-    res.write('<h1>Hello World!!!</h1><br /><a href="localhost:3000/contact">Contact</a>');
+    // res.write('<h1>Hello World!!!</h1><br /><a href="localhost:3000/contact">Contact</a>');
     // send the data
-    res.end();
+    // res.end();
+    res.end('<h1>Hello World!!!</h1><br /><a href="localhost:3000/contact">Contact</a>');
   }
   if(req.url === '/contact'){
     res.setHeader('Content-Type', 'text/html')
