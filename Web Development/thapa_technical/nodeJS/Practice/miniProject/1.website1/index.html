@@ -22,11 +22,31 @@
     <div class="todo-task-display"></div>
     <script>
       const formElementRef = document.querySelector(".todo-input-container");
-      formElementRef.addEventListener("submit", (event) => {
+      formElementRef.addEventListener("submit", async (event) => {
         event.preventDefault();
         const formData = new FormData(formElementRef);
-        console.log(formData.get("task-heading"));
-        console.log(formData.get("task-body"));
+        const formHeading = formData.get("task-heading");
+        const formBody = formData.get("task-body");
+        console.log(formHeading, formBody);
+
+        try {
+          const res = await fetch("/add", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ formHeading, formBody }),
+          });
+          if (res.ok) {
+            alert("task added");
+          } else {
+            const errorMessage = await res.text();
+
+            console.log(errorMessage);
+            alert(errorMessage);
+          }
+        } catch (error) {
+          console.log("Fetch error: ", error);
+          alert(error);
+        }
       });
     </script>
   </body>
