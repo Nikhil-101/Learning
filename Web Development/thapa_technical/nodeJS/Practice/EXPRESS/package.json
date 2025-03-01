@@ -1,0 +1,18 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "author": "Nikhil",
+  "main": "index.js",
+  "description": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --env-file=.env --watch 1.hello.mjs",
+    "d": "nodemon --env-file=.env 1.hello.mjs"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "express": "5.0.0",
+    "zod": "^3.24.2"
+  }
+}

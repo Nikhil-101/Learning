@@ -37,6 +37,7 @@
           });
           if (res.ok) {
             alert("task added");
+            event.target.reset();
           } else {
             const errorMessage = await res.text();
 
