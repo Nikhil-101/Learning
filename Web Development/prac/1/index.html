@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-hidden">This is First Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is a Box</div>
+      <div class="box box-hidden">This is Last Box</div>
+    </div>
+  </body>
+  <script>
+    const containerRef = document.querySelector(".container");
+    const boxRef = document.querySelectorAll(".box");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle("box-hidden", !entry.isIntersecting);
+          // if (entry.isIntersecting) observer.unobserve(entry.target);
+        });
+        console.log(entries);
+      },
+      {
+        // threshold: 0.5,
+        rootMargin: "-100px",
+      }
+    );
+
+    // last card observer
+    const lastCardObserver = new IntersectionObserver((entries) => {
+      const lastCard = entries[0];
+      if (lastCard.isIntersecting) {
+        for (let i = 0; i < 10; i++) {
+          const newDivRef = document.createElement("div");
+          newDivRef.innerText = "This is New Div";
+          newDivRef.classList.add("box", "box-hidden");
+          observer.observe(newDivRef);
+          containerRef.append(newDivRef);
+        }
+        lastCardObserver.unobserve(lastCard.target);
+        lastCardObserver.observe(document.querySelector(".box:last-child"));
+      }
+    }, {});
+
+    lastCardObserver.observe(document.querySelector(".box:last-child"));
+
+    boxRef.forEach((box) => {
+      observer.observe(box);
+    });
+  </script>
+</html>
