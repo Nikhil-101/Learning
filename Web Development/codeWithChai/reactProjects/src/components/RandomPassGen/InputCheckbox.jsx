@@ -1,6 +1,6 @@
 export function InputCheckbox({ iName, cValue, handleCheckbox }) {
   return (
-    <>
+    <div className="flex items-center gap-0.5">
       <input
         onChange={handleCheckbox}
         type="checkbox"
@@ -11,6 +11,6 @@ export function InputCheckbox({ iName, cValue, handleCheckbox }) {
       <label className="capitalize text-orange-400" htmlFor={iName}>
         {iName}
       </label>
-    </>
+    </div>
   );
 }

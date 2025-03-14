@@ -55,7 +55,6 @@ export function UI() {
   }
 
   function handleCheckbox(e) {
-    console.log(e, e.target, e.target.checked);
     if (e.target.name === "numbers") {
       setIsNum(e.target.checked);
     } else {
@@ -77,12 +76,12 @@ export function UI() {
 
   return (
     <>
-      <div className="min-w-fit bg-gray-700">
-        <div>
+      <div className="w-[30rem] bg-gray-700 px-5 py-3 rounded-2xl">
+        <div className="min-w-fit flex">
           <InputText passKey={displayKey} />
           <Button handleBtnClick={handleBtnClick} />
         </div>
-        <div>
+        <div className="flex items-center justify-evenly mt-2">
           <InputRange length={length} handleInputRange={handleInputRange} />
           <InputCheckbox
             iName="numbers"

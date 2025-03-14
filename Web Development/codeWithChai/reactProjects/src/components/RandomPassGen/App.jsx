@@ -4,7 +4,9 @@ export function App() {
   return (
     <>
       <main className="bg-gray-950 h-screen w-screen">
-        <UI />
+        <div className="grid justify-center relative top-10">
+          <UI />
+        </div>
       </main>
     </>
   );
