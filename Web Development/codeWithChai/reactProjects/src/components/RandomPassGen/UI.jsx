@@ -10,11 +10,13 @@ export function UI() {
   let [isCharacter, setIsCharacter] = useState(false);
   const [displayKey, setdisplayKey] = useState("");
 
+  // Create password at startup & also when values in dependency array are changed
   useEffect(() => {
     genPass();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [length, isNum, isCharacter]);
 
+  // generate the available pool of characters with user options
   function genKey() {
     let key = "";
     for (let i = 65; i <= 90; i++) {
@@ -42,7 +44,7 @@ export function UI() {
     }
     return key;
   }
-
+  // generate the password with specified length
   function genPass() {
     let key = genKey();
     let pass = "";
@@ -53,7 +55,7 @@ export function UI() {
     }
     setdisplayKey(pass);
   }
-
+  // checks which checkbox is clicked and pass the value
   function handleCheckbox(e) {
     if (e.target.name === "numbers") {
       setIsNum(e.target.checked);
@@ -61,11 +63,11 @@ export function UI() {
       setIsCharacter(e.target.checked);
     }
   }
-
+  // hendles input slider for password length
   function handleInputRange(e) {
     setLength(e.target.value);
   }
-
+  // copy password to clipboard
   function handleBtnClick() {
     try {
       navigator.clipboard.writeText(displayKey);
@@ -76,12 +78,16 @@ export function UI() {
 
   return (
     <>
+      {/* main body */}
       <div className="w-[30rem] bg-gray-700 px-5 py-3 rounded-2xl">
+        {/* ui body */}
         <div className="min-w-fit flex">
+          {/* input field & copy btn */}
           <InputText passKey={displayKey} />
           <Button handleBtnClick={handleBtnClick} />
         </div>
-        <div className="flex items-center justify-evenly mt-2">
+        {/* user control present from here */}
+        <div className="flex items-center justify-between mt-2">
           <InputRange length={length} handleInputRange={handleInputRange} />
           <InputCheckbox
             iName="numbers"

@@ -1,4 +1,5 @@
 export function InputCheckbox({ iName, cValue, handleCheckbox }) {
+  // iname -> input field iName | cname -> checked value in checkbox
   return (
     <div className="flex items-center gap-0.5">
       <input

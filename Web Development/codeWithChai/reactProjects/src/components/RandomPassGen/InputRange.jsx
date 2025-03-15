@@ -9,6 +9,7 @@ export function InputRange({ length, handleInputRange }) {
         step={1}
         value={length}
       />
+      {/* converting number to string and add padding for values less than 10 */}
       <span className="text-orange-400">{`Length (${length
         .toString()
         .padStart(2, "0")})`}</span>
