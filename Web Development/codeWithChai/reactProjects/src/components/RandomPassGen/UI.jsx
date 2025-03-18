@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Button } from "./Button";
 import { InputCheckbox } from "./InputCheckbox";
 import { InputRange } from "./InputRange";
@@ -16,8 +16,9 @@ export function UI() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [length, isNum, isCharacter]);
 
+  // from here useCallback hooks are used to cache the calculation
   // generate the available pool of characters with user options
-  function genKey() {
+  const genKey = useCallback(() => {
     let key = "";
     for (let i = 65; i <= 90; i++) {
       key += String.fromCharCode(i);
@@ -43,9 +44,36 @@ export function UI() {
       }
     }
     return key;
-  }
+  }, [isCharacter, isNum]);
+  // function genKey() {
+  //   let key = "";
+  //   for (let i = 65; i <= 90; i++) {
+  //     key += String.fromCharCode(i);
+  //   }
+  //   for (let i = 97; i <= 122; i++) {
+  //     key += String.fromCharCode(i);
+  //   }
+  //   if (isNum) {
+  //     key += "0123456789";
+  //   }
+  //   if (isCharacter) {
+  //     for (let i = 33; i <= 47; i++) {
+  //       key += String.fromCharCode(i);
+  //     }
+  //     for (let i = 58; i <= 64; i++) {
+  //       key += String.fromCharCode(i);
+  //     }
+  //     for (let i = 91; i <= 96; i++) {
+  //       key += String.fromCharCode(i);
+  //     }
+  //     for (let i = 123; i <= 126; i++) {
+  //       key += String.fromCharCode(i);
+  //     }
+  //   }
+  //   return key;
+  // }
   // generate the password with specified length
-  function genPass() {
+  const genPass = useCallback(() => {
     let key = genKey();
     let pass = "";
 
@@ -54,7 +82,17 @@ export function UI() {
       console.log(pass);
     }
     setdisplayKey(pass);
-  }
+  }, [length, genKey]);
+  // function genPass() {
+  //   let key = genKey();
+  //   let pass = "";s
+
+  //   for (let i = 0; i < length; i++) {
+  //     pass += key[Math.floor(Math.random() * key.length)];
+  //     console.log(pass);
+  //   }
+  //   setdisplayKey(pass);
+  // }
   // checks which checkbox is clicked and pass the value
   function handleCheckbox(e) {
     if (e.target.name === "numbers") {

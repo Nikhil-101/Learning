@@ -5,7 +5,9 @@ import "./index.css";
 // BGColor App
 // import { App } from "./components/BGColor/App";
 // Pass Generator
-import { App } from "./components/RandomPassGen/App";
+// import { App } from "./components/RandomPassGen/App";
+// Currency Converter
+import { App } from "./components/3.CurrencyConverter/App";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
